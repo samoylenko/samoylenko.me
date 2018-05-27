@@ -1,0 +1,21 @@
+{
+  "name": "appseclearning",
+  "version": "1.0.0",
+  "description": "Learning Application Security",
+  "scripts": {
+    "lint-md": "remark . -f"
+  },
+  "remarkConfig": {
+    "plugins": ["remark-preset-lint-recommended"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samoylenko/appseclearning.git"
+  },
+  "author": "Mikhail Samoylenko",
+  "license": "ISC",
+  "dependencies": {
+    "remark-cli": "^5.0.0",
+    "remark-preset-lint-recommended": "^3.0.1"
+  }
+}
