@@ -1,0 +1,5 @@
+# IDE
+.idea/
+
+# Local Build
+node_modules/
