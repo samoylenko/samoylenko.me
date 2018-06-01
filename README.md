@@ -23,7 +23,7 @@ development teams - a skill which is currently in a very high demand.
         for many of our colleagues, application security starts and
         ends here. However, this list is just the beginning.
 
-        1.  [MITRE CWE (Common Weaknesses Enumeration)](https://cwe.mitre.org)
+        2.  [MITRE CWE (Common Weaknesses Enumeration)](https://cwe.mitre.org)
 
         Knowledge base on security weaknesses. Vulnerabilities that are found
         by security researchers are commonly mapped against CWE IDs - this is
