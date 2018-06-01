@@ -21,14 +21,14 @@ development teams - a skill which is currently in a very high demand.
 
         The top common application security vulnerabilities list. You will often see that
         for many of our colleagues, application security starts and
-        ends here. However, this is just the beginning of what needs to be watched for.
+        ends here. However, this list is just the beginning.
 
         1.  [MITRE CWE (Common Weaknesses Enumeration)](https://cwe.mitre.org)
 
         Knowledge base on security weaknesses. Vulnerabilities that are found
         by security researchers are commonly mapped against CWE IDs - this is
         a practice that we recommend to ensure having a common ground with all
-        parties involved into the vulnerability resolution process.
+        parties involved in the vulnerability resolution process.
 
         3.  [OWASP ASVS (Application Security Verification Standard)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 
