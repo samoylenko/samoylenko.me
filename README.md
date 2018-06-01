@@ -2,7 +2,7 @@
 
 # Learning Application Security
 
-This project was created in collaboration Will Ascuitto - we decided to start
+This project was created in collaboration with Will Ascuitto - we decided to start
 collecting notes from our conversations about sharing our knowledge with
 colleagues who are just starting their professional career in application
 security.
@@ -19,17 +19,16 @@ development teams - a skill which is currently in a very high demand.
     1.  Theory
         1.  [OWASP TOP-10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 
-        The top common application security vulnerabilities list. As you will
-        often see, for many of our colleagues application security starts and
-        ends here, however this is just the beginning, and is just a small bit
-        of what needs to be watched for.
+        The top common application security vulnerabilities list. You will often see that
+        for many of our colleagues, application security starts and
+        ends here. However, this is just the beginning of what needs to be watched for.
 
         1.  [MITRE CWE (Common Weaknesses Enumeration)](https://cwe.mitre.org)
 
         Knowledge base on security weaknesses. Vulnerabilities that are found
         by security researchers are commonly mapped against CWE IDs - this is
         a practice that we recommend to ensure having a common ground with all
-        parties involved into vulnerability resolution process.
+        parties involved into the vulnerability resolution process.
 
         3.  [OWASP ASVS (Application Security Verification Standard)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 
@@ -44,14 +43,14 @@ development teams - a skill which is currently in a very high demand.
         1.  Complete these challenges to see common vulnerabilities in action:
             1.  [OWASP WebGoat](https://github.com/WebGoat/WebGoat)
 
-            WebGoat has great tutorials, and will guide you through everything.
-             Its development version also enables you to learn how to fix common
+            WebGoat has great tutorials and will guide you through everything.
+             Its development version also teaches you how to fix common
              vulnerabilities in Java Web Applications. Additional lessons are
              available at [GitHub](https://github.com/WebGoat/WebGoat-Lessons).
 
             2.  [OWASP JuiceShop](https://github.com/bkimminich/juice-shop)
 
-            JuiceShop is a very good example of modern 'single-page'
+            JuiceShop is a good example of modern 'single-page'
             application, and it's challenges are fun!
 
         2.  Learn to use this tool, it's very useful:
@@ -59,7 +58,7 @@ development teams - a skill which is currently in a very high demand.
                 (or [Burp Suite](https://portswigger.net/burp) - commercial
                 analogue, extremely popular, and adequately priced)
 
-            These tools are very useful for looking into how web applications
+            ZAP contains tools for looking into how web applications
             work and for finding and reproducing potential vulnerabilities.
             Use these tools while playing with WebGoat or JuiceShop - it's
             highly recommended!
@@ -68,31 +67,29 @@ development teams - a skill which is currently in a very high demand.
 
     We think that an application security professional must
     have development skills. In the modern world of applications development,
-    security is not about generic solutions - at least, not anymore. Application
-    security professional is expected to know how to resolve and/or prevent
-    security issues - not only detect those. And there will be popular
-    frameworks in each programming language, and most probably all required
-    security controls will present in these frameworks already, just not
-    properly applied by developers.
+    security is not about generic solutions - at least, not anymore. An application
+    security professional is expected not only to detect security issues, but also 
+    to resolve and/or prevent them. Most of the popular programming
+    frameworks have security controls built-in; however, they are often not
+    properly implemented by developers.
 
-    **It is not normal anymore if a developer has to implement security
-    controls from scratch. In most cases, this (implementing security controls
-    from scratch and not using functionality provided by modern frameworks or
-    well-known libraries) will be the root cause for many security issues
-    you will work with.**
+    **It is no longer the case that developers need to implement security
+    controls from scratch. Custom security implmentation and not using the functionality 
+    provided by modern frameworks/well-known libraries will commonly be the root cause 
+    for many security issues you will work with.**
 
     1.  Main programming language: **Java**
 
-        Widely used by the enterprise, it's not going away anytime soon. And
-        unlike **.Net / C#**, it's free to use and learn. Also, it's not
-        restricted to just Microsoft stack. Java is a great first language to
-        learn, and it also has a friendly and very helpful, huge community.
+        Widely used by the enterprise, it's not going away anytime soon.
+        Unlike **.Net / C#**, it's free to use and learn. Also, it's not
+        restricted to  the Microsoft stack. Combined with a widespread community 
+        of helpful and friendly developers, Java is a great first lanaguage to learn.
 
         If you don't like Java, our other recommendation would be **Go**, but
         it's not currently very popular in the world of enterprise.
 
-        1.  Use a dependency management (build) tool everytime when you are
-            writing your programs. Never download dependencies manually.
+        1.  Use a dependency management (build) tool to write your programs. 
+            Never download dependencies manually.
 
             For Java, we recommend **[Maven](https://maven.apache.org/)**. A great
             alternative would be [Gradle](https://gradle.org/), but it's not yet
@@ -103,43 +100,39 @@ development teams - a skill which is currently in a very high demand.
             (`maven-archetype-quickstart`).
 
         2.  **[Spring](http://spring.io/)** is probably the best Java framework
-        to begin with. It is used to quickly build web applications. And it is
-        very popular.
+        to begin with. It is a popular way to quickly build web applications.
 
-        There's a book which helps start with Spring -
+        This book is useful for getting started with Spring -
         "[Spring in action](https://www.manning.com/books/spring-in-action-fourth-edition)".
-        But it's probably also a good opportunity for us to stress that
-        another thing that makes you a better security professional is **reading
-        reference manuals**, so we do strongly recommend you to read spring
-        reference documents in addition to the book.
+        This is a good opportunity for us to stress that
+        **reading reference manuals** will help make you a better security professional,
+        so we recommend that you to read Spring reference documentation in addition to the book.
 
-        This is probably the **hardest item to learn on this list**, so please
-        allow some time for reading and practice. But the knowledge and
-        practice obtained while learning Spring is exactly what will make you
+        We consider this to be the **hardest item to learn on this list**, so
+        allow some time for reading and practice. The knowledge and
+        practice obtained while learning Spring will make you
         stand out as an application security professional.
 
 
     2. Scripting language (secondary programming language): **ECMAScript aka
        JavaScript** (specifically, **[NodeJS](https://nodejs.org/)**)
 
-       In addition to the main programming langunage, a security professional
-       will always need to write scripts: It can be a quick test, or some
-       automation, or maybe even a solution that injects security into a build
-       pipeline. It will involve items commonly at a level of operating system
+       In addition to their main programming langunage, a security professional
+       will need to write scripts: this can be a quick test, some
+       automation, or even a solution that injects security into a build
+       pipeline. Scripting commonly involves items the operating system level
        (working with files, directories, running binaries etc) which are not
        best addressed by Java or, say, C#.
 
        We recommend JavaScript for many reasons - it has become extremely
        popular in the recent years, and it's much more convenient than Python,
-       which was a champion for us in this space for quite a long time.
-
-       Knowing JavaScript is also a huge bonus because it's now a major
+       the former champion in this space. JavaScript is also a major
        component of any web and mobile application.
 
 
     3. Version Control System (**[Git](https://git-scm.com/)**)
 
-       Git is essential to know by any person who is involved in application
+       Git is essential to know by anyone who is involved in application
        development.
 
        Git is easy to start with:
@@ -151,17 +144,16 @@ development teams - a skill which is currently in a very high demand.
     4. Use [Lint](https://en.wikipedia.org/wiki/Lint_(software)) and code
        quality control
 
-       We decided to include this section in the document because these tools
-       are extremenely easy to use, they are fast and stable, and they really
-       help writing good and *secure* code. You can consider these tools
-       'cheating' if you like - if you happen to review someone else's code,
-       these tools do help a lot.
+       We decided to include this section because these tools
+       are fast, stable, easy-to-use, and help writing quality, *secure* code. 
+       You can consider these tools 'cheating' if you like - 
+       if you happen to review someone else's code, these tools do help a lot.
 
        There are authors of document use the following tools:
        1. [SonarLint](https://www.sonarlint.org/) - a free IDE plugin that
           checks code quality and highlights potential bugs
        2. We use [Intellij IDEA](https://www.jetbrains.com/idea/) as our IDE -
-          it has embedded code inspections and features which are very helpful
+          it has embedded code inspections and features which are helpful
           during code reviews
        3. [ESlint](https://eslint.org/) - for JavaScript, as part of automatic
           builds and collaboration
@@ -173,10 +165,10 @@ development teams - a skill which is currently in a very high demand.
 
     Let us throw a word '
     [DevOps](https://aws.amazon.com/devops/what-is-devops/)' in this text - it
-    becomes widely adopted by many companies, and authors of this document are
-    also big fans of this approach.
+    is becoming widely adopted by many companies, and the authors of this document are
+    big fans of this approach.
 
-    Application security person will need to be familiar with DevOps, which
+    Application security professionals will need to be familiar with DevOps, which
     includes some knowledge of infrastructure - specifically, operation systems
     and various cloud providers.
 
@@ -196,9 +188,9 @@ development teams - a skill which is currently in a very high demand.
         installation if run with -B command line parameter: `setup-x86_64.exe
         -B`
 
-    2.  **[Docker](https://www.docker.com)** - docker is a solution which allows
-        to package applications in containers so that e.g. all dependencies are
-        taken care of, and all user needs to do is to just run the container
+    2.  **[Docker](https://www.docker.com)** - Docker is a solution which allows
+        applications to be packaged into containers so that all dependencies are
+        taken care of, and allows the user to run the container
         instead of spending hours or maybe days in
         [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell).
 
