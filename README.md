@@ -58,9 +58,9 @@ development teams - a skill which is currently in a very high demand.
                 (or [Burp Suite](https://portswigger.net/burp) - commercial
                 analogue, extremely popular, and adequately priced)
 
-            ZAP contains tools for looking into how web applications
+            These tools are useful for looking into how web applications
             work and for finding and reproducing potential vulnerabilities.
-            Use these tools while playing with WebGoat or JuiceShop - it's
+            Use them while playing with WebGoat or JuiceShop - it's
             highly recommended!
 
 2.  Programming skills:
