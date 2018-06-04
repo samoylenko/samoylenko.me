@@ -117,7 +117,7 @@ development teams - a skill which is currently in a very high demand.
     2. Scripting language (secondary programming language): **ECMAScript aka
        JavaScript** (specifically, **[NodeJS](https://nodejs.org/)**)
 
-       In addition to their main programming langunage, a security professional
+       In addition to their main programming language, a security professional
        will need to write scripts: this can be a quick test, some
        automation, or even a solution that injects security into a build
        pipeline. Scripting commonly involves items the operating system level
