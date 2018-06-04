@@ -3,3 +3,6 @@
 
 # Local Build
 node_modules/
+
+# Project-specific
+package-lock.json
