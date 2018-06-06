@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Learning Application Security",
   "scripts": {
-    "lint-md": "remark . -f"
+    "lint-md": "remark . -f",
+    "lint-md-fix": "remark . -o"
   },
   "remarkConfig": {
     "plugins": [
