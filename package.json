@@ -18,7 +18,7 @@
   "author": "Mikhail Samoylenko",
   "license": "ISC",
   "devDependencies": {
-    "remark-cli": "^5.0.0",
-    "remark-preset-lint-recommended": "^3.0.1"
+    "remark-cli": "*",
+    "remark-preset-lint-recommended": "*"
   }
 }
