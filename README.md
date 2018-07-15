@@ -7,16 +7,21 @@ collecting notes from our conversations about sharing our knowledge with
 colleagues who are just starting their professional career in application
 security.
 
-This document contains a list of items which we think may help build the
-required skills and knowledge quickly. We also share our practical,
-real-world experience and advice with those who want to make a difference and
-become and information security professionals able to productively interact with
-development teams - a skill which is currently in a very high demand.
+This page contains a list of items which we think may help build the required
+skills and knowledge quickly. We also share our practical, real-world experience
+and advice with those who want to make a difference and become an application
+security professionals who can productively interact both with development teams
+and management - a skill which is currently in a very high demand.
 
 ## What to learn (and why)
 
-Becoming an application security professional requires working knowledge in at
-least two areas: computer security and software development.
+Becoming an application security professional requires knowledge and practice in
+computer security and software development. This section is our recommendations
+on how to start in these two areas.
+
+We will focus mostly on the security part for two reasons: it's the primary
+motivation for this document, and software development communities have already
+created and published excellent guides on every topic of your choosing.
 
 ### Security skills
 
@@ -38,7 +43,7 @@ books and get familiar with around 5 security-related resources to obtain the
 required security knowledge to start. Think about it - will take only around 3
 months if you spend as little as 1-2 hours a day reading. And it will be quite
 an interesting and motivational read which will also give you a good
-understanding of what to look for when you will be exploring software
+understanding of what to look for when you will be exploring the software
 development domain.
 
 Below are our recommendation on where to start learning.
