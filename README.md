@@ -57,7 +57,7 @@ Below are our recommendation on where to start learning.
 A great book by [(ISC)<sup>2</sup>](https://www.isc2.org) which not only
 contains everything that security professional should know, but also provides a
 good direction on how to apply your skills and bring value to people or
-organizaitons you will work with.
+organizations you will work with.
 
 2.  [CSSLP CBK](https://www.isc2.org/Certifications/CSSLP)
 
@@ -217,7 +217,7 @@ wish we knew when just started to learn programming:
     For Java, we strongly recommend learning how to use
     **[Maven](https://maven.apache.org/)**. A great alternative would be
     [Gradle](https://gradle.org/), but it's not yet widely adopted by
-    entherprise.
+    enterprise.
 
     Start your first Java project by running `mvn archetype:generate` and
     selecting the default template it offers, `maven-archetype-quickstart`.
@@ -270,7 +270,7 @@ a solution that injects security into a build pipeline. Scripting commonly
 involves items at the operating system level (working with files, directories,
 running binaries etc) which are not best addressed by Java or, say, C#.
 
-We recommend JavaScript (aka ECMAScript) and it's interpretor,
+We recommend JavaScript (aka ECMAScript) and it's interpreter,
 [**NodeJS**](https://nodejs.org) for many reasons - it has become extremely popular
 in the recent years, and it's much more convenient than
 [**Python**](https://www.python.org/), the former champion in this space.
