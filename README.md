@@ -163,8 +163,10 @@ proprietary technology stacks like Microsoft's (.Net/C#) or Apple's, it's free
 to use and learn. Combined with a widespread community of helpful and friendly
 developers, Java is a great first language to learn.
 
-If you don't like Java, our other recommendation would be **Go**, but it's not
-currently as popular in the world of enterprise as Java.
+If you don't like Java, our other recommendation would be
+**[Go](https://golang.org)** - this new language has become very popular in no
+time, and it already has a great community. We do see it being used by large
+companies, although not as much as Java or .Net
 
 Below is our recommendations on how to start with Java.
 
@@ -240,8 +242,17 @@ wish we knew when just started to learn programming:
 3.  We also recommend you to start practicing
     [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
     \- this is one of the most important concepts that you will need to be
-    familiar with in your job as an Application Security professional. By the
-    way, if you used our advice above and started your project with Maven
+    familiar with in your job as an Application Security professional for two
+    reasons:
+
+    1.  It helps understand the importance of defining the problem before
+        working on a solution, and how to ensure consistency of that solution
+        quality over time.
+    2.  Adding security tests to the software development project and ensuring
+        build does complete until these tests pass is one of the best ways to
+        inject security requirements into development process.
+
+    By the way, if you used our advice above and started your project with Maven
     Quickstart archetype, you already have a sample test included in your
     project.
 
