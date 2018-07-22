@@ -7,16 +7,21 @@ collecting notes from our conversations about sharing our knowledge with
 colleagues who are just starting their professional career in application
 security.
 
-This document contains a list of items which we think may help build the
-required skills and knowledge quickly. We also share our practical,
-real-world experience and advice with those who want to make a difference and
-become and information security professionals able to productively interact with
-development teams - a skill which is currently in a very high demand.
+This page contains a list of items which we think may help build the required
+skills and knowledge quickly. We also share our practical, real-world experience
+and advice with those who want to make a difference and become an application
+security professionals who can productively interact both with development teams
+and management - a skill which is currently in a very high demand.
 
 ## What to learn (and why)
 
-Becoming an application security professional requires working knowledge in at
-least two areas: computer security and software development.
+Becoming an application security professional requires knowledge and practice in
+computer security and software development. This section is our recommendations
+on how to start in these two areas.
+
+We will focus mostly on the security part for two reasons: it's the primary
+motivation for this document, and software development communities have already
+created and published excellent guides on every topic of your choosing.
 
 ### Security skills
 
@@ -38,7 +43,7 @@ books and get familiar with around 5 security-related resources to obtain the
 required security knowledge to start. Think about it - will take only around 3
 months if you spend as little as 1-2 hours a day reading. And it will be quite
 an interesting and motivational read which will also give you a good
-understanding of what to look for when you will be exploring software
+understanding of what to look for when you will be exploring the software
 development domain.
 
 Below are our recommendation on where to start learning.
@@ -52,7 +57,7 @@ Below are our recommendation on where to start learning.
 A great book by [(ISC)<sup>2</sup>](https://www.isc2.org) which not only
 contains everything that security professional should know, but also provides a
 good direction on how to apply your skills and bring value to people or
-organizaitons you will work with.
+organizations you will work with.
 
 2.  [CSSLP CBK](https://www.isc2.org/Certifications/CSSLP)
 
@@ -151,117 +156,165 @@ controls from scratch. Custom security controls implementation and not using
 the functionality provided by modern frameworks/well-known libraries will
 commonly be the root cause for many security issues you will work with.**
 
-1.  Main programming language: **Java**
+#### Main programming language: **Java**
 
-Widely used by the enterprise, it's not going away anytime soon. Unlike **.Net /
-C#**, it's free to use and learn. Also, it's not restricted to the Microsoft
-stack. Combined with a widespread community of helpful and friendly developers,
-Java is a great first language to learn.
+Widely used by the enterprise, it's not going away anytime soon. Unlike
+proprietary technology stacks like Microsoft's (.Net/C#) or Apple's, it's free
+to use and learn. Combined with a widespread community of helpful and friendly
+developers, Java is a great first language to learn.
 
-If you don't like Java, our other recommendation would be **Go**, but
-it's not currently very popular in the world of enterprise.
+If you don't like Java, our other recommendation would be
+**[Go](https://golang.org)** - this new language has become very popular in no
+time, and it already has a great community. We do see it being used by large
+companies, although not as much as Java or .Net
 
-1.  Use a dependency management (build) tool to write your programs.
+Below is our recommendations on how to start with Java.
+
+##### Theory
+
+Oracle offers great certification paths that provide a very good structure on
+how to learn Java. Even if you decide not to take the exam in the end, Oracle's
+Java certification resources are a great place to start learning.
+
+1.  Books: Look for study guides to prepare for "Oracle Certified Associate,
+    Java SE Programmer" exams. There will be two exams: Associate and
+    Professional. This is the required knowledge to be effective with Java.
+
+2.  Mock exams: We recommend Java Mock Exams by
+    [Enthuware](http://enthuware.com) to help solidify your Java knowledge. They
+    are very cheap, and together with theory in books, spending as little as
+    just 10 minutes a day with Mock exams will help learn Java faster.
+
+3.  **[Spring](http://spring.io/)** is probably the best Java framework to begin
+    with. It is a popular way to quickly build web applications, has great
+    documentation, most companies use it, and it is probably the best
+    introduction into the world of modern software development.
+
+    **NOTE**: We consider this to be **the hardest item to learn on this list**,
+    so allow some time for reading and practice. The knowledge and skills
+    obtained while learning Spring will make you stand out as an application
+    security professional.
+
+    Spring quickstart:
+    1.  Book:
+        "[Spring in action](https://www.manning.com/books/spring-in-action-fourth-edition)"
+        is great for getting started with Spring.
+
+    2.  This is a good opportunity for us to stress that **reading reference
+        manuals will help make you a better security professional**, so we
+        recommend that you read Spring reference documentation in addition to
+        the book. It does looks huge, but authors structured it the way that you
+        only need to read what's necessary, and you can just index the rest to
+        know where to come back to looking for information on specific items.
+
+##### Practice
+
+There is of course nothing better for learning a programming language than to
+write programs using it. We just wanted to provide you with a couple of items we
+wish we knew when just started to learn programming:
+
+1.  Always use a dependency management (build) tool to write your programs.
     Never download dependencies manually.
 
-    For Java, we recommend **[Maven](https://maven.apache.org/)**. A great
-    alternative would be [Gradle](https://gradle.org/), but it's not yet
-    widely adopted by entherprise.
+    For Java, we strongly recommend learning how to use
+    **[Maven](https://maven.apache.org/)**. A great alternative would be
+    [Gradle](https://gradle.org/), but it's not yet widely adopted by
+    enterprise.
 
-    Start your first java project by running `mvn mvn archetype:generate`
-    and selecting the default template it offers
-    (`maven-archetype-quickstart`).
+    Start your first Java project by running `mvn archetype:generate` and
+    selecting the default template it offers, `maven-archetype-quickstart`.
 
-2.  **[Spring](http://spring.io/)** is probably the best Java framework to begin
-    with. It is a popular way to quickly build web applications, has great
-    documentation, and it will introduce you into the world of modern software
-    development.
+2.  Always use a version control system.
 
-We consider this to be the **hardest item to learn on this list**, so allow some
-time for reading and practice. The knowledge and skills obtained while learning
-Spring will make you stand out as an application security professional.
+    We of course recommend **[Git](https://git-scm.com/)**. It is essential to
+    know by anyone who is involved in application development.
 
-"[Spring in action](https://www.manning.com/books/spring-in-action-fourth-edition)"
-book is great for getting started with Spring.
-
-This is a good opportunity for us to stress that **reading reference manuals**
-will help make you a better security professional, so we recommend that you read
-Spring reference documentation in addition to the book.
-
-2.  Scripting language (secondary programming language): **ECMAScript aka
-    JavaScript** (specifically, **[NodeJS](https://nodejs.org/)**)
-
-    In addition to their main programming language, a security professional will
-    need to write scripts: this can be a quick test, some automation, or even a
-    solution that injects security into a build pipeline. Scripting commonly
-    involves items at the operating system level (working with files,
-    directories, running binaries etc) which are not best addressed by Java or,
-    say, C#.
-
-    We recommend JavaScript for many reasons - it has become extremely
-    popular in the recent years, and it's much more convenient than Python,
-    the former champion in this space. JavaScript is also a major
-    component of any web and mobile application.
-
-3.  Version Control System (**[Git](https://git-scm.com/)**)
-
-    Git is essential to know by anyone who is involved in application
-    development.
-
-    Git is easy to start with:
+    Git is very easy to start with:
 
     1.  There is a free book: <https://git-scm.com/doc>
-    2.  Git has very cool tutorials: <https://try.github.io>
 
-4.  Use [Lint](https://en.wikipedia.org/wiki/Lint_(software)) and code
-    quality control
+        Don't be alarmed by the book's size. You only need to read the first
+        3 sections: "*Getting started*", "*Git basics*", and "*Git branching*" to
+        start. It will take around an hour of your time.
 
-    We decided to include this section because these tools
-    are fast, stable, easy-to-use, and help writing quality, _secure_ code.
-    You can consider these tools 'cheating' if you like -
-    if you happen to review someone else's code, these tools do help a lot.
+    2.  Git also has very cool tutorials: <https://try.github.io>
 
-    Authors of this document use the following tools:
+3.  We also recommend you to start practicing
+    [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
+    \- this is one of the most important concepts that you will need to be
+    familiar with in your job as an Application Security professional for two
+    reasons:
 
-    1.  [SonarLint](https://www.sonarlint.org/) - a free IDE plugin that
-        checks code quality and highlights potential bugs
-    2.  We use [Intellij IDEA](https://www.jetbrains.com/idea/) as our IDE -
-        it has embedded code inspections and features which are helpful
-        during code reviews
-    3.  [ESlint](https://eslint.org/) - for JavaScript, as part of automatic
-        builds and collaboration
-    4.  And we probably should mention
-        [remark](https://github.com/remarkjs/remark) which we use to
-        collaborate on this project
+    1.  It helps understand the importance of defining the problem before
+        working on a solution, and how to ensure consistency of that solution
+        quality over time.
+    2.  Adding security tests to the software development project and ensuring
+        build does complete until these tests pass is one of the best ways to
+        inject security requirements into development process.
 
-5.  IT infrastructure skills:
+    By the way, if you used our advice above and started your project with Maven
+    Quickstart archetype, you already have a sample test included in your
+    project.
 
-    Let us throw a word '
-    [DevOps](https://aws.amazon.com/devops/what-is-devops/)' in this text - it
-    is becoming widely adopted by many companies, and the authors of this document are
-    big fans of this approach.
+4.  Use [Lint](https://en.wikipedia.org/wiki/Lint_(software)) and code quality
+    control.
 
-    Application security professionals will need to be familiar with DevOps, which
-    includes some knowledge of infrastructure - specifically, operation systems
-    and various cloud providers.
+    These tools are fast, stable, easy-to-use, and they assist in writing
+    quality, bug-free code. And if you happen to review someone else's code,
+    these tools do help a lot as well.
 
-    Here's the list of what we recommend to learn:
+    Authors of this document use the following linting tools:
 
-    1.  **GNU/Linux** - a family of free operating systems used (almost)
-        everywhere, from software development to running production
-        applications. Our recommendation is to start with
-        [Debian](https://www.debian.org).
+    1.  [SonarLint](https://www.sonarlint.org/) - a free IDE plugin that checks
+        code quality and highlights potential bugs
+    2.  We use [Intellij IDEA](https://www.jetbrains.com/idea/) as our IDE - it
+        has embedded code inspections and features which are extremely helpful
+    3.  And we probably should mention
+        [remark](https://github.com/remarkjs/remark) which we use to collaborate
+        on this project
 
-        We should also mention [CygWin](https://cygwin.com) - it makes many of
-        GNU/Linux tools available for Windows users. Note that cygwin
-        installation does not require admin rights if run with `-B` command line
-        parameter: `setup-x86_64.exe -B`
+#### Secondary programming language (scripting): **JavaScript**
 
-    2.  **[Docker](https://www.docker.com)** - Docker is a solution which allows
-        applications to be packaged into containers so that all dependencies are
-        taken care of, and allows the user to run the container
-        instead of spending hours or maybe days in
-        [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell).
+In addition to their main programming language, a security professional will
+always need to write scripts: this can be a quick test, some automation, or even
+a solution that injects security into a build pipeline. Scripting commonly
+involves items at the operating system level (working with files, directories,
+running binaries etc) which are not best addressed by Java or, say, C#.
 
-    3.  **[Amazon Web Services](https://aws.amazon.com)** - very popular
-        provider for cloud services
+We recommend JavaScript (aka ECMAScript) and it's interpreter,
+[**NodeJS**](https://nodejs.org) for many reasons - it has become extremely popular
+in the recent years, and it's much more convenient than
+[**Python**](https://www.python.org/), the former champion in this space.
+JavaScript is also a major component of any web and mobile application.
+
+#### IT infrastructure skills:
+
+Let us throw a word '
+[DevOps](https://aws.amazon.com/devops/what-is-devops/)' in this text - it
+is becoming widely adopted by many companies, and the authors of this document are
+big fans of this approach.
+
+Application security professionals will need to be familiar with DevOps, which
+includes some knowledge of infrastructure - specifically, operation systems
+and various cloud providers.
+
+Here's the list of what we recommend to learn:
+
+1.  **GNU/Linux** - a family of free operating systems used (almost)
+    everywhere, from software development to running production
+    applications. Our recommendation is to start with
+    [Debian](https://www.debian.org).
+
+    We should also mention [CygWin](https://cygwin.com) - it makes many of
+    GNU/Linux tools available for Windows users. Note that cygwin
+    installation does not require admin rights if run with `-B` command line
+    parameter: `setup-x86_64.exe -B`
+
+2.  **[Docker](https://www.docker.com)** - Docker is a solution which allows
+    applications to be packaged into containers so that all dependencies are
+    taken care of, and allows the user to run the container
+    instead of spending hours or maybe days in
+    [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell).
+
+3.  **[Amazon Web Services](https://aws.amazon.com)** - very popular
+    provider for cloud services
