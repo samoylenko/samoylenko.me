@@ -249,8 +249,8 @@ wish we knew when just started to learn programming:
         working on a solution, and how to ensure consistency of that solution
         quality over time.
     2.  Adding security tests to the software development project and ensuring
-        build does complete until these tests pass is one of the best ways to
-        inject security requirements into development process.
+        build does not complete successfully until these tests pass is one of
+        the best ways to inject security requirements into development process.
 
     By the way, if you used our advice above and started your project with Maven
     Quickstart archetype, you already have a sample test included in your
