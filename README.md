@@ -68,12 +68,17 @@ become (ISC)<sup>2</sup> member and get certified), but if you really have to
 chose between the two, we recommend CISSP - it will give you a wider perspective
 on security topics to start with.
 
-3.  [The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws](https://www.wiley.com/en-us/The+Web+Application+Hacker%27s+Handbook%3A+Finding+and+Exploiting+Security+Flaws%2C+2nd+Edition-p-9781118026472)
+3.  [Agile Application Security: Enabling Security in a Continuous Delivery Pipeline](http://shop.oreilly.com/product/0636920045106.do)
+
+A long-awaited book that helps understand how security can be applied to the
+modern world of agile software development.
+
+4.  [The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws](https://www.wiley.com/en-us/The+Web+Application+Hacker%27s+Handbook%3A+Finding+and+Exploiting+Security+Flaws%2C+2nd+Edition-p-9781118026472)
 
 Some great penetration testers we met call this book their Bible of hacking and
 keep it at their desk at all times.
 
-4.  [The Tangled Web: A Guide to Securing Modern Web Applications](https://nostarch.com/tangledweb)
+5.  [The Tangled Web: A Guide to Securing Modern Web Applications](https://nostarch.com/tangledweb)
 
 A great book on web application security recommended by many security
 professionals.
