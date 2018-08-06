@@ -1,17 +1,11 @@
 [![Build Status](https://travis-ci.org/samoylenko/appseclearning.svg?branch=master)](https://travis-ci.org/samoylenko/appseclearning)
 
-# Learning Application Security
+# Learning Application Security (quick path)
 
-This project was created in collaboration with Will Ascuitto - we decided to start
-collecting notes from our conversations about sharing our knowledge with
-colleagues who are just starting their professional career in application
-security.
-
-This page contains a list of items which we think may help build the required
-skills and knowledge quickly. We also share our practical, real-world experience
-and advice with those who want to make a difference and become an application
-security professionals who can productively interact both with development teams
-and management - a skill which is currently in a very high demand.
+We created this project to share notes from our discussions about what would be
+the the quickest path for someone who is just starting their career, to gain the
+minimal knowledge and experience required to become a successful application
+security specialist.
 
 ## What to learn (and why)
 
