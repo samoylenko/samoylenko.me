@@ -7,40 +7,19 @@ the the quickest path for someone who is just starting their career, to gain the
 minimal knowledge and experience required to become a successful application
 security specialist.
 
-## What to learn (and why)
-
-Becoming an application security professional requires knowledge and practice in
-computer security and software development. This section is our recommendations
-on how to start in these two areas.
-
-We will focus mostly on the security part for two reasons: it's the primary
-motivation for this document, and software development communities have already
-created and published excellent guides on every topic of your choosing.
+By definition, application security specialist is a person who can work
+effecively both in security and software development, so we primarily focus on
+these two areas in our document. Our goal is not to repeat those excellent
+guides already made available on the Internet by both communities, but just to
+point you to where to start, and, sometimes, how to start.
 
 ### Security skills
 
-In the context of this document, security skills is the easiest part to start
-learning with. Application security professional does not need to have very deep
-knowledge of networks and operating systems security to start their career. We
-focus only on the
-[Application layer](https://en.wikipedia.org/wiki/OSI_model#Layer_7:_Application_Layer),
-just one out of seven layers of the
-[OSI model](https://en.wikipedia.org/wiki/OSI_model). But please note that items
-like '_ensuring secrets are only transmitted over HTTPS_', or '_production
-configuration files are protected at filesystem level_', are also part of the
-application security domain.
-
-#### "5+5" formula
-
 We have a so-called "5+5" formula - you only need to read around 5 security
 books and get familiar with around 5 security-related resources to obtain the
-required security knowledge to start. Think about it - will take only around 3
-months if you spend as little as 1-2 hours a day reading. And it will be quite
-an interesting and motivational read which will also give you a good
-understanding of what to look for when you will be exploring the software
-development domain.
+required security knowledge to start.
 
-Below are our recommendation on where to start learning.
+Below are our recommendations on where to start learning.
 
 #### Theory
 
@@ -48,14 +27,14 @@ Below are our recommendation on where to start learning.
 
 1.  [CISSP CBK (Common Body of Knowledge)](https://www.isc2.org/Certifications/CISSP)
 
-A great book by [(ISC)<sup>2</sup>](https://www.isc2.org) which not only
-contains everything that security professional should know, but also provides a
-good direction on how to apply your skills and bring value to people or
+A great material by [(ISC)<sup>2</sup>](https://www.isc2.org) with wide coverage of
+topics every security professional should be familiar with. It also provides a
+good direction on how to apply your skills and bring value to people and
 organizations you will work with.
 
 2.  [CSSLP CBK](https://www.isc2.org/Certifications/CSSLP)
 
-Another CBK by (ISC)<sup>2</sup> focused on software lifecycle.
+Another material by (ISC)<sup>2</sup> focused on secure software lifecycle.
 
 We of course recommend reading both the CISSP and CSSLP CBKs (or, even better,
 become (ISC)<sup>2</sup> member and get certified), but if you really have to
@@ -69,32 +48,34 @@ modern world of agile software development.
 
 4.  [The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws](https://www.wiley.com/en-us/The+Web+Application+Hacker%27s+Handbook%3A+Finding+and+Exploiting+Security+Flaws%2C+2nd+Edition-p-9781118026472)
 
-Some great penetration testers we met call this book their Bible of hacking and
-keep it at their desk at all times.
+A great source of knowledge about how web applications work, and what are their
+security weaknesses.
 
 5.  [The Tangled Web: A Guide to Securing Modern Web Applications](https://nostarch.com/tangledweb)
 
-A great book on web application security recommended by many security
+Another great book on web application security recommended by many security
 professionals.
 
 ##### Resources
 
 1.  [OWASP TOP-10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 
-The top common application security vulnerabilities list. You will often see that
-for many of our colleagues, application security starts and
-ends here. However, this list is just the beginning.
+The top common application security vulnerabilities list. Note that it's not the
+complete list, and just the top 10. Used by many professionals as a baseline to
+prioritize their work on application security issues.
 
-2.  [MITRE CWE (Common Weaknesses Enumeration)](https://cwe.mitre.org)
+2.  [OWASP ASVS (Application Security Verification Standard)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 
-Knowledge base on security weaknesses. Vulnerabilities that are found
-by security researchers are commonly mapped against CWE IDs - this is
-a practice that we recommend to ensure having a common ground with all
-parties involved in the vulnerability resolution process.
+OWASP's comprehensive guide on how to verify application security. This is where
+the top 10 list above comes from.
 
-3.  [OWASP ASVS (Application Security Verification Standard)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
+3.  [MITRE CWE (Common Weaknesses Enumeration)](https://cwe.mitre.org)
 
-Great guide on what and how to look for in applications.
+Knowledge base of common security weaknesses. We recommend it not only because
+it helps understand both the problem and how to solve it, but because it also
+helps all parties involved to avoid any confusion when they discuss a potential
+security finding. That's why many security researchers and tools map all their
+findings to CWE IDs.
 
 4.  [Hypertext Transfer Protocol Version 2 (HTTP/2)](https://tools.ietf.org/html/rfc7540)
 
@@ -110,9 +91,7 @@ world of information security. We recommend
 [**Security Weekly**](https://securityweekly.com/shows) shows - really great guys
 who now have grown their original podcast, "Paul's Security Weekly", into a
 number of shows covering different topics, and we recommend subscribing to all
-of them. Lots of extremely useful info and fun. Absolutely not boring and very
-motivational. Authors of this document are highly influenced by the Security
-Weekly Crew and their shows.
+of them. Lots of extremely useful info and fun.
 
 #### Practice
 
@@ -146,42 +125,44 @@ Weekly Crew and their shows.
 
 ### Programming skills:
 
-We think that an application security professional must
-have development skills. In the modern world of applications development,
-security is not about generic solutions - at least, not anymore. An application
-security professional is expected not only to detect security issues, but also
-to resolve and/or prevent them. Most of the popular programming
-frameworks have security controls built-in; however, they are often not
-properly implemented by developers.
+We think that an application security professional must have development skills.
+In the modern world of application development, security is not about just
+detecting potential weaknesses and providing generic recommendations. An
+application security professional is expected to be able to lead a development
+team to a proper solution in a specific conditions of each project.
 
-**It is no longer the case that developers need to implement security
-controls from scratch. Custom security controls implementation and not using
-the functionality provided by modern frameworks/well-known libraries will
-commonly be the root cause for many security issues you will work with.**
+As a very common example, most of popular programming frameworks already have
+security features built-in, but they are just not being used by developers - a
+successful application security professional will provide guidance to developers
+on how to use these features, instead of trying to implement these controls
+manually.
 
-#### Main programming language: **Java**
+**It is no longer the case that developers need to implement security controls
+from scratch. Custom security controls implementation and not using the built-in
+functionality provided by modern frameworks/well-known libraries will commonly
+be the root cause for many security issues you will work with.**
+
+We recommend the following learning path for your programming skills.
+
+#### Main programming language: [**Java**](https://java.com)
 
 Widely used by the enterprise, it's not going away anytime soon. Unlike
-proprietary technology stacks like Microsoft's (.Net/C#) or Apple's, it's free
-to use and learn. Combined with a widespread community of helpful and friendly
-developers, Java is a great first language to learn.
-
-If you don't like Java, our other recommendation would be
-**[Go](https://golang.org)** - this new language has become very popular in no
-time, and it already has a great community. We do see it being used by large
-companies, although not as much as Java or .Net
+proprietary technology stacks like Microsoft's or Apple's, it's free to use and
+learn. Combined with a widespread community of helpful and friendly developers,
+Java is a great first language to learn.
 
 Below is our recommendations on how to start with Java.
 
 ##### Theory
 
-Oracle offers great certification paths that provide a very good structure on
-how to learn Java. Even if you decide not to take the exam in the end, Oracle's
-Java certification resources are a great place to start learning.
+Oracle offers great [certification paths](https://education.oracle.com/) that
+provide a very good structure on how to learn Java. Even if you decide not to
+take the exam in the end, Oracle's Java certification resources are a great
+place to start learning.
 
-1.  Books: Look for study guides to prepare for "Oracle Certified Associate,
-    Java SE Programmer" exams. There will be two exams: Associate and
-    Professional. This is the required knowledge to be effective with Java.
+1.  Books: Look for study guides to prepare for "Oracle Certified Java SE
+    Programmer" exams. There will be two exams: Associate and Professional. This
+    is the required knowledge to be effective with Java.
 
 2.  Mock exams: We recommend Java Mock Exams by
     [Enthuware](http://enthuware.com) to help solidify your Java knowledge. They
@@ -189,8 +170,8 @@ Java certification resources are a great place to start learning.
     just 10 minutes a day with Mock exams will help learn Java faster.
 
 3.  **[Spring](http://spring.io/)** is probably the best Java framework to begin
-    with. It is a popular way to quickly build web applications, has great
-    documentation, most companies use it, and it is probably the best
+    with. It is a popular way to quickly build applications and it has great
+    documentation. Most companies use it, and it is probably the best
     introduction into the world of modern software development.
 
     **NOTE**: We consider this to be **the hardest item to learn on this list**,
@@ -206,9 +187,10 @@ Java certification resources are a great place to start learning.
     2.  This is a good opportunity for us to stress that **reading reference
         manuals will help make you a better security professional**, so we
         recommend that you read Spring reference documentation in addition to
-        the book. It does looks huge, but authors structured it the way that you
-        only need to read what's necessary, and you can just index the rest to
-        know where to come back to looking for information on specific items.
+        the book. It does looks huge, but it's authors structured it the way
+        that you only need to read what's necessary, and you can just index the
+        rest to know where to come back to looking for information on specific
+        items.
 
 ##### Practice
 
@@ -221,8 +203,7 @@ wish we knew when just started to learn programming:
 
     For Java, we strongly recommend learning how to use
     **[Maven](https://maven.apache.org/)**. A great alternative would be
-    [Gradle](https://gradle.org/), but it's not yet widely adopted by
-    enterprise.
+    [Gradle](https://gradle.org/), but it's not yet as popular.
 
     Start your first Java project by running `mvn archetype:generate` and
     selecting the default template it offers, `maven-archetype-quickstart`.
@@ -285,39 +266,42 @@ involves items at the operating system level (working with files, directories,
 running binaries etc) which are not best addressed by Java or, say, C#.
 
 We recommend JavaScript (aka ECMAScript) and it's interpreter,
-[**NodeJS**](https://nodejs.org) for many reasons - it has become extremely popular
-in the recent years, and it's much more convenient than
-[**Python**](https://www.python.org/), the former champion in this space.
+[**NodeJS**](https://nodejs.org) for many reasons - it has become extremely
+popular in the recent years, and it's much more convenient than
+[Python](https://www.python.org/), the former champion in this space.
 JavaScript is also a major component of any web and mobile application.
 
 #### IT infrastructure skills:
 
-Let us throw a word '
-[DevOps](https://aws.amazon.com/devops/what-is-devops/)' in this text - it
-is becoming widely adopted by many companies, and the authors of this document are
-big fans of this approach.
+In the world of modern software development, the practice of
+[DevOps](https://en.wikipedia.org/wiki/DevOps) is adopted by more and more
+organizations bringing in automatic builds and deployment everywhere.
 
-Application security professionals will need to be familiar with DevOps, which
-includes some knowledge of infrastructure - specifically, operation systems
-and various cloud providers.
+A successful application security professional will need to be able to inject
+their security tools into the automation pipeline, and that will not only
+require programming and scripting skills, but also knowledge of the stack that
+is used to build and run software.
 
 Here's the list of what we recommend to learn:
 
-1.  **GNU/Linux** - a family of free operating systems used (almost)
-    everywhere, from software development to running production
-    applications. Our recommendation is to start with
-    [Debian](https://www.debian.org).
+1.  **GNU/Linux** - a family of free operating systems used (almost) everywhere,
+    from software development to running production applications. Most
+    continuous build/deployment pipelines predominantly use GNU/Linux because
+    it's free and it was designed for this type of tasks better than any other
+    operating system. We recommend starting with
+    [**Debian**](https://www.debian.org) distribution because it's very easy to
+    learn and use in any environment. And then we recommend looking into
+    [CentOS](https://www.centos.org) which is a free version of so pupular
+    [RedHat Linux](https://www.redhat.com) used by almost all large companies.
 
-    We should also mention [CygWin](https://cygwin.com) - it makes many of
-    GNU/Linux tools available for Windows users. Note that cygwin
-    installation does not require admin rights if run with `-B` command line
-    parameter: `setup-x86_64.exe -B`
+    We should also mention [CygWin](https://cygwin.com) - it makes many of GNU
+    tools available for Windows users. Note that cygwin installation does not
+    require admin rights if run with `-B` command line parameter:
+    `setup-x86_64.exe -B`
 
 2.  **[Docker](https://www.docker.com)** - Docker is a solution which allows
-    applications to be packaged into containers so that all dependencies are
-    taken care of, and allows the user to run the container
-    instead of spending hours or maybe days in
-    [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell).
-
-3.  **[Amazon Web Services](https://aws.amazon.com)** - very popular
-    provider for cloud services
+    applications to be packaged into containers so that all dependencies and
+    configuration are taken care of, and allows the user to just run the
+    container instead of spending hours or maybe days trying to get their tools
+    working. Majority of automatic build pipelines use Docker, and it's a great
+    way to make security tools available for developers.
