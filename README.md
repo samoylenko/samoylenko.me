@@ -299,6 +299,15 @@ Here's the list of what we recommend to learn:
     require admin rights if run with `-B` command line parameter:
     `setup-x86_64.exe -B`
 
+    And if you are looking for a good resource to learn GNU/Linux and modern
+    operating systems in general, the following two distributions have great
+    documentation. Just create a virtual machine and follow their installation
+    guides:
+    1.  [Arch Linux](https://archlinux.org)
+        ([Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide))
+    2.  [Gentoo](https://gentoo.org)
+        ([Handbook](https://wiki.gentoo.org/wiki/Handbook:Main_Page))
+
 2.  **[Docker](https://www.docker.com)** - Docker is a solution which allows
     applications to be packaged into containers so that all dependencies and
     configuration are taken care of, and allows the user to just run the
