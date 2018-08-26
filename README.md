@@ -294,11 +294,6 @@ Here's the list of what we recommend to learn:
     into [CentOS](https://www.centos.org) which is a free version of so pupular
     [RedHat Linux](https://www.redhat.com) used by almost all large companies.
 
-    We should also mention [CygWin](https://cygwin.com) - it makes many of GNU
-    tools available for Windows users. Note that cygwin installation does not
-    require admin rights if run with `-B` command line parameter:
-    `setup-x86_64.exe -B`
-
     And if you are looking for a good resource to learn GNU/Linux and modern
     operating systems in general, the following two distributions have great
     documentation. Just create a virtual machine and follow their installation
@@ -307,6 +302,11 @@ Here's the list of what we recommend to learn:
         ([Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide))
     2.  [Gentoo](https://gentoo.org)
         ([Handbook](https://wiki.gentoo.org/wiki/Handbook:Main_Page))
+
+    We should also mention [CygWin](https://cygwin.com) - it makes many of GNU
+    tools available for Windows users. Note that cygwin installation does not
+    require admin rights if run with `-B` command line parameter:
+    `setup-x86_64.exe -B`
 
 2.  **[Docker](https://www.docker.com)** - Docker is a solution which allows
     applications to be packaged into containers so that all dependencies and
