@@ -284,14 +284,14 @@ is used to build and run software.
 
 Here's the list of what we recommend to learn:
 
-1.  **GNU/Linux** - a family of free operating systems used (almost) everywhere,
-    from software development to running production applications. Most
-    continuous build/deployment pipelines predominantly use GNU/Linux because
-    it's free and it was designed for this type of tasks better than any other
-    operating system. We recommend starting with
-    [**Debian**](https://www.debian.org) distribution because it's very easy to
-    learn and use in any environment. And then we recommend looking into
-    [CentOS](https://www.centos.org) which is a free version of so pupular
+1.  **[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html)** - a family of
+    free operating systems used (almost) everywhere, from software development
+    to running production applications. Most continuous build/deployment
+    pipelines predominantly use GNU/Linux because it's free and it was designed
+    for this type of tasks better than any other operating system. We recommend
+    starting with [**Debian**](https://www.debian.org) distribution because it's
+    very easy to learn and use in any environment. And then we recommend looking
+    into [CentOS](https://www.centos.org) which is a free version of so pupular
     [RedHat Linux](https://www.redhat.com) used by almost all large companies.
 
     We should also mention [CygWin](https://cygwin.com) - it makes many of GNU
