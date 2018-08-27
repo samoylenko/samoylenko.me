@@ -284,15 +284,24 @@ is used to build and run software.
 
 Here's the list of what we recommend to learn:
 
-1.  **GNU/Linux** - a family of free operating systems used (almost) everywhere,
-    from software development to running production applications. Most
-    continuous build/deployment pipelines predominantly use GNU/Linux because
-    it's free and it was designed for this type of tasks better than any other
-    operating system. We recommend starting with
-    [**Debian**](https://www.debian.org) distribution because it's very easy to
-    learn and use in any environment. And then we recommend looking into
-    [CentOS](https://www.centos.org) which is a free version of so pupular
+1.  **[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html)** - a family of
+    free operating systems used (almost) everywhere, from software development
+    to running production applications. Most continuous build/deployment
+    pipelines predominantly use GNU/Linux because it's free and it was designed
+    for this type of tasks better than any other operating system. We recommend
+    starting with [**Debian**](https://www.debian.org) distribution because it's
+    very easy to learn and use in any environment. And then we recommend looking
+    into [CentOS](https://www.centos.org) which is a free version of so pupular
     [RedHat Linux](https://www.redhat.com) used by almost all large companies.
+
+    And if you are looking for a good resource to learn GNU/Linux and modern
+    operating systems in general, the following two distributions have great
+    documentation. Just create a virtual machine and follow their installation
+    guides:
+    1.  [Arch Linux](https://archlinux.org)
+        ([Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide))
+    2.  [Gentoo](https://gentoo.org)
+        ([Handbook](https://wiki.gentoo.org/wiki/Handbook:Main_Page))
 
     We should also mention [CygWin](https://cygwin.com) - it makes many of GNU
     tools available for Windows users. Note that cygwin installation does not
