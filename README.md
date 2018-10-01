@@ -87,11 +87,20 @@ this protocol is essential for every application security professional.
 ###### Podcasts
 
 Listening to podcasts is a great way to stay on top of any updates in the
-world of information security. We recommend
-[**Security Weekly**](https://securityweekly.com/shows) shows - really great guys
-who now have grown their original podcast, "Paul's Security Weekly", into a
-number of shows covering different topics, and we recommend subscribing to all
-of them. Lots of extremely useful info and fun.
+world of application security. We recommend:
+
+1.  [**Security Weekly**](https://securityweekly.com/shows) shows - really
+great guys who now have grown their original podcast, "Paul's Security
+Weekly", into a number of shows covering different topics, and we recommend
+subscribing to all of them. Lots of extremely useful info and fun.
+
+2.  [**The Secure Developer**](https://www.heavybit.com/library/podcasts/the-secure-developer)
+    \- a podcast by Guy Podjarny, Founder of [snyk.io](https://snyk.io). Great
+    discussions and guests.
+
+3.  [**Application Security PodCast**](https://securityjourney.com/application-security-podcast/)
+    \- another great application security podcast. Lots of amazing interviews
+    and stories.
 
 #### Practice
 
