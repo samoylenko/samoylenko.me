@@ -201,6 +201,13 @@ place to start learning.
         rest to know where to come back to looking for information on specific
         items.
 
+4.  After you get familiar with Spring Framework, there is an extra step we
+    recommend: now its a good time to look into **Java Enterprise Edition**.
+    Even if you just read the [Tutorial](https://javaee.github.io/tutorial/),
+    this is what will enable you to start working with software developers and
+    help them find best solutions for any security issues they will have. And it
+    will also help you advance to a new level in your own projects.
+
 ##### Practice
 
 There is of course nothing better for learning a programming language than to
