@@ -216,8 +216,10 @@ wish we knew when just started to learn programming:
     Never download dependencies manually.
 
     For Java, we strongly recommend learning how to use
-    **[Maven](https://maven.apache.org/)**. A great alternative would be
-    [Gradle](https://gradle.org/), but it's not yet as popular.
+    **[Gradle](https://gradle.org/)**, a very powerful build and dependency
+    management tool for Java, and anything else. A great alternative would be
+    [Maven](https://maven.apache.org/), the previous leader in Java space which
+    is still very popular in large companies.
 
     Start your first Java project by running `mvn archetype:generate` and
     selecting the default template it offers, `maven-archetype-quickstart`.
