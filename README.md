@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/samoylenko/appseclearning.svg?branch=master)](https://travis-ci.org/samoylenko/appseclearning)
-
 # Learning Application Security (quick path)
 
 We created this project to share notes from our discussions about what would be

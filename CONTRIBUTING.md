@@ -12,7 +12,7 @@ we are using [remark-lint](https://github.com/remarkjs/remark-lint/) with
 preset.
 
 Remark syntax will be automatically verified using
-[automatic builds](https://travis-ci.org/samoylenko/appseclearning) after you
+[automatic builds](https://github.com/samoylenko/appseclearning/actions) after you
 create a new pull-request. This will look similar to:
 
 ![lint-md](img/lint-md.png)
