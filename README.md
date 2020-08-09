@@ -160,7 +160,7 @@ Java is a great first language to learn.
 
 Below is our recommendations on how to start with Java.
 
-##### Theory
+##### Java - Theory
 
 Oracle offers great [certification paths](https://education.oracle.com/) that
 provide a very good structure on how to learn Java. Even if you decide not to
@@ -206,7 +206,7 @@ place to start learning.
     help them find best solutions for any security issues they will have. And it
     will also help you advance to a new level in your own projects.
 
-##### Practice
+##### Java - Practice
 
 There is of course nothing better for learning a programming language than to
 write programs using it. We just wanted to provide you with a couple of items we
