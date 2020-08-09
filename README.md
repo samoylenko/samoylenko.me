@@ -160,7 +160,7 @@ Java is a great first language to learn.
 
 Below is our recommendations on how to start with Java.
 
-##### Theory
+##### Java - Theory
 
 Oracle offers great [certification paths](https://education.oracle.com/) that
 provide a very good structure on how to learn Java. Even if you decide not to
@@ -206,7 +206,7 @@ place to start learning.
     help them find best solutions for any security issues they will have. And it
     will also help you advance to a new level in your own projects.
 
-##### Practice
+##### Java - Practice
 
 There is of course nothing better for learning a programming language than to
 write programs using it. We just wanted to provide you with a couple of items we
@@ -216,8 +216,10 @@ wish we knew when just started to learn programming:
     Never download dependencies manually.
 
     For Java, we strongly recommend learning how to use
-    **[Maven](https://maven.apache.org/)**. A great alternative would be
-    [Gradle](https://gradle.org/), but it's not yet as popular.
+    **[Gradle](https://gradle.org/)**, a very powerful build and dependency
+    management tool for Java, and anything else. A great alternative would be
+    [Maven](https://maven.apache.org/), the previous leader in Java space which
+    is still very popular in large companies.
 
     Start your first Java project by running `mvn archetype:generate` and
     selecting the default template it offers, `maven-archetype-quickstart`.
