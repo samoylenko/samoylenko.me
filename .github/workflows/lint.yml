@@ -16,3 +16,6 @@ jobs:
 
       - name: Lint Markdown
         run: npm run lint-md
+
+      - name: Proofread
+        run: npm run proofread
