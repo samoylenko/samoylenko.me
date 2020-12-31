@@ -46,7 +46,7 @@ our right to make mistakes and not always be perfect at everything.
     investing in the collaborating environment).
 
 3.  Not sharing enough information with other people so that they can make
-    better decisions/
+    better decisions.
 
 ## A couple of simple questions that help prevent human mistakes.
 
