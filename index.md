@@ -5,7 +5,7 @@ Application Security**. That's how you get there.
 
 Technically, I can no longer tell the difference between security issues and
 other software bugs, both in design and code. Just priority and complexity maybe
-\- and that's what I base my next statement at:
+\- and that's what I base my next statement on:
 
 **Application security engineers are software engineers**. They bring value by
 taking on the complexity of security components in the application so that

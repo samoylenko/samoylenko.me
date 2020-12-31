@@ -285,12 +285,6 @@ solution that injects security into a build pipeline. Scripting commonly
 involves items at the operating system level (working with files, directories,
 running binaries, etc.).
 
-We recommend JavaScript (aka ) and it's interpreter,
-[**NodeJS**](https://nodejs.org) for many reasons - it has become extremely
-popular in the recent years, and it's much more convenient than
-[Python](https://www.python.org/), the former champion in this space. JavaScript
-is also a major component of any web and mobile application.
-
 We recommend
 [ECMAScript](https://www.ecma-international.org/publications/standards/Ecma-262.htm),
 aka JavaScript and it's interpreter, Node, for many reasons - it has become
