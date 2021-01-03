@@ -22,61 +22,62 @@ Below are our recommendations on where to start learning.
 
 1.  [CISSP CBK (Common Body of Knowledge)](https://www.isc2.org/Certifications/CISSP)
 
-A great material by [(ISC)<sup>2</sup>](https://www.isc2.org) with a wide
-coverage of topics every security professional should be familiar with. It also
-provides a good direction on applying your skills and bringing value to the
-people and organizations you work with.
+    A great material by [(ISC)<sup>2</sup>](https://www.isc2.org) with a wide
+    coverage of topics every security professional should be familiar with. It
+    also provides a good direction on applying your skills and bringing value to
+    the people and organizations you work with.
 
 2.  [CSSLP CBK](https://www.isc2.org/Certifications/CSSLP)
 
-Another material by (ISC)<sup>2</sup> focused on secure software lifecycle.
+    Another material by (ISC)<sup>2</sup> focused on secure software lifecycle.
 
-Of course, we recommend reading both the CISSP and CSSLP CBKs (or, even better,
-become a member and get certified). Still, if you really have to choose between
-the two, we recommend CISSP - it will give you a wider perspective on security
-topics to start with.
+    Of course, we recommend reading both the CISSP and CSSLP CBKs (or, even
+    better, become a member and get certified). Still, if you really have to
+    choose between the two, we recommend CISSP - it will give you a wider
+    perspective on security topics to start with.
 
 3.  [Agile Application Security: Enabling Security in a Continuous Delivery Pipeline](http://shop.oreilly.com/product/0636920045106.do)
 
-A long-awaited book helps understand how one can apply security to the modern
-world of agile software development.
+    A long-awaited book helps understand how one can apply security to the
+    modern world of agile software development.
 
 4.  [The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws](https://www.wiley.com/en-us/The+Web+Application+Hacker%27s+Handbook%3A+Finding+and+Exploiting+Security+Flaws%2C+2nd+Edition-p-9781118026472)
 
-A great source of knowledge about how web applications work and what are their
-security weaknesses.
+    A great source of knowledge about how web applications work and what are
+    their security weaknesses.
 
 5.  [The Tangled Web: A Guide to Securing Modern Web Applications](https://nostarch.com/tangledweb)
 
-Many security professionals recommend this great book about web application
-security.
+    Many security professionals recommend this great book about web application
+    security.
 
 #### Resources
 
 1.  [OWASP TOP-10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 
-The top common application security vulnerabilities list. Note that it's not the
-complete list, and just the top 10. Used by many professionals as a baseline to
-prioritize their work on application security issues.
+    The top common application security vulnerabilities list. Note that it's not
+    the complete list, and just the top 10. Used by many professionals as a
+    baseline to prioritize their work on application security issues.
 
 2.  [OWASP ASVS (Application Security Verification Standard)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 
-[OWASP](https://owasp.org/)'s comprehensive guide on how to verify application
-security. This is where the top 10 list above comes from. Probably the most
-useful resource on Application Security currently available.
+    [OWASP](https://owasp.org/)'s comprehensive guide on how to verify
+    application security. This is where the top 10 list above comes from.
+    Probably the most useful resource on Application Security currently
+    available.
 
 3.  [MITRE CWE (Common Weaknesses Enumeration)](https://cwe.mitre.org)
 
-Database of known security weaknesses. We recommend it not only because it helps
-understand both the problem and help with the solution, but also because it
-helps avoid confusion when discussing potential security finding between
-different parties. That's why many security researchers and tools map all their
-findings to CWE IDs.
+    Database of known security weaknesses. We recommend it not only because it
+    helps understand both the problem and help with the solution, but also
+    because it helps avoid confusion when discussing potential security finding
+    between different parties. That's why many security researchers and tools
+    map all their findings to CWE IDs.
 
 4.  [Hypertext Transfer Protocol Version 2 (HTTP/2)](https://tools.ietf.org/html/rfc7540)
 
-HTTP is the protocol web applications use to communicate. Knowledge of this
-protocol is essential for every application security professional.
+    HTTP is the protocol web applications use to communicate. Knowledge of this
+    protocol is essential for every application security professional.
 
 #### Continuous learning
 
