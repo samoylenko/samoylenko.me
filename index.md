@@ -14,10 +14,10 @@ helping the client.
 
 ## What is a secure application?
 
-Someone at a [Security Weekly](https://securityweekly.com/) podcast said:
-
 >  A secure application is an application that only does what it was designed to
 >  do and nothing else
+>
+> -- Someone at the [Security Weekly](https://securityweekly.com/) podcast
 
 Please help me find the original statement. Don't know who said this, but this
 is the best definition I could find.
@@ -33,10 +33,11 @@ our right to make mistakes and not always be perfect at everything.
 
 ## What causes software developers to make more mistakes?
 
-[Kyle Randolph](https://twitter.com/kylerandolph), at
-[The Secure Developer podcast, ep. #1](https://www.heavybit.com/library/podcasts/the-secure-developer/ep-1-prioritizing-secure-development/)
-
 > If I'm doing something myself, I'm probably doing it wrong
+>
+> -- [Kyle Randolph](https://twitter.com/kylerandolph), at [The Secure Developer podcast, ep. #1](https://www.heavybit.com/library/podcasts/the-secure-developer/ep-1-prioritizing-secure-development/)
+
+Three common mistakes people make when writing software:
 
 1.  ["Reinventing the wheel"](https://en.wikipedia.org/wiki/Reinventing_the_wheel)
     \- taking on work (and responsibility) for complex and large items that are

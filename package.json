@@ -18,8 +18,8 @@
   "author": "Michael Samoylenko",
   "license": "UNLICENSED",
   "devDependencies": {
+    "markdown-proofreader": "*",
     "remark-cli": "*",
-    "remark-preset-lint-recommended": "*",
-    "markdown-proofreader": "*"
+    "remark-preset-lint-recommended": "*"
   }
 }
