@@ -60,7 +60,7 @@ those controls. As a result:
 The project should employ as much as possible help from both automation tools
 and human participants in everything from enforcing code style and testing
 coverage, all the way to pair programming and any other forms of code and design
-reviews. [**This philosophy is discussed in detail here**](prevent). I believe that
+reviews. [**This philosophy is discussed in detail here**](../prevent). I believe that
 the best path there is by **embracing the DevOps methodology**, which is based on
 the experience of the modern software development community (and is the best way
 to reduce security issues I that know).
@@ -87,6 +87,6 @@ projects in multiple companies during the last decade or so.
 
 ## Next steps from here
 
-*   [Preventing human mistakes in software development](prevent)
-*   [Learning Application Security](learn)
+*   [Preventing human mistakes in software development](../prevent)
+*   [Learning Application Security](../learn)
 

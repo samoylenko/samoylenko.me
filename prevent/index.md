@@ -1,7 +1,7 @@
 # Preventing human mistakes in software development
 
 (if you are looking for less philosophy and didn't find this page helpful,
-please try [this page](practices) instead)
+please try [another page](../practices) instead)
 
 I am convinced that the best way to prevent mistakes during software development
 is to **never write code alone**. It's crucial always to have someone look at
@@ -243,5 +243,5 @@ entire page somewhat complements his point of view as well.
 
 ## Next steps from here
 
-*   [Learning Application Security](learn)
-*   [Secure Coding Practices](practices)
+*   [Learning Application Security](../learn)
+*   [Secure Coding Practices](../practices)
