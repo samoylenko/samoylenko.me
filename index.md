@@ -54,9 +54,23 @@ The most common ways to make more mistakes I see:
 
 (Indeed I am aware that the two items below can actually be merged into one)
 
-# Still reading?
+### But is there a checklist?
+
+The best one I know is
+[**OWASP Application Security Verification Standard**](https://github.com/OWASP/ASVS).
+There are over 200 items on that list, but just following the modern software
+development practices, avoiding the two abovementioned mistakes, and simply
+reading manuals for the tools and libraries or frameworks you are using covers
+most of them. 
+
+Some people call it "**Secure Coding Practices**." But it looks like there is no
+universal document I could refer you to, and each company (or team) defines its
+own. Here's [my attempt to define something like that](practices).
+
+## Still reading?
 
 Let's continue our discussion:
 
-*   [Preventing human mistakes in software development](prevent/)
-*   [Learning Application Security](learn/)
+*   [Preventing human mistakes in software development](prevent)
+*   [Learning Application Security](learn)
+*   [Secure Coding Practices](practices)
