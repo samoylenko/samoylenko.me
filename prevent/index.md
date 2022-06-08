@@ -18,7 +18,7 @@ accessible options - let's bring imaginary friends and robot friends on board
 first. They can help catch the most obvious issues, allowing humans to focus on
 the items that do require human intelligence and time.
 
-### Imaginary friends
+### Imaginary friends (Threat modelling and test scenarios)
 
 As you may guess, imaginary friends don't require much effort to get...
 This somewhat describes what security teams keep asking software
@@ -54,7 +54,7 @@ to [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/), an
 excellent tool to help you with your threat modeling process and a perfect
 segway to the next section.
 
-### Robot friends
+### Robot friends (Tools and automation)
 
 Everybody wanted to have a robot friend when we were kids (until we learned they
 want tp replace us at our job, right). And in software development, we can make
@@ -132,7 +132,7 @@ using the scenarios we come up with. In my experience, using this approach
 significantly improves software quality and design, and I can't recommend it
 highly enough.
 
-### Human friends
+### Human friends (Collaboration and communication)
 
 But no tools can replace teaming up with a fellow human - one can't rely on
 robots and imaginary friends if they want to step out of the sandbox. And
