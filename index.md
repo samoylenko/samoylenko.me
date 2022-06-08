@@ -2,7 +2,7 @@
 
 Let's not waste your time: **Application Security is DevOps, DevOps is
 Application Security**. You get there by reducing complexity, embracing change
-and learning, and shortening the feedback loop.
+and learning, and by shortening the feedback loop.
 
 Technically, I can no longer distinguish between security issues and other
 software bugs, both in design and code. Just priority and complexity, maybe -
@@ -42,9 +42,9 @@ our right to make mistakes and not always be perfect at everything.
 The most common ways to make more mistakes I see:
 
 1.  ["**Reinventing the wheel**"](https://en.wikipedia.org/wiki/Reinventing_the_wheel)
-    and the resulting unnecessary additional complexity - taking on work (and the
-    corresponding responsibility) that is out of the original project (or task)
-    scope.
+    and the resulting unnecessary additional complexity - such as taking on
+    work (and assuming the corresponding responsibility) that is out of the
+    original project (or task) scope.
 
 2.  **Making decisions in isolation** - in the world of instant communication and
     the Internet, assuming that you are the first to face this problem and that
