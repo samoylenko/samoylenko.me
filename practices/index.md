@@ -51,8 +51,8 @@ those controls. As a result:
     reinvent the wheel.
 
 -   It's crucial, however, to follow **rigorous hygiene on the project
-    dependencies** - everything from libraries to build tools (see the
-    software supply chain issue). At a minimum, restricted to using **only
+    dependencies** - everything from libraries to build tools (see
+    [the software supply chain issue](https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/)). At a minimum, restricted to using **only
     well-known and time-tested tools and libraries**, followed by **keeping
     dependencies up to date** and **automated testing** to ensure updates don't
     break the application.
@@ -95,41 +95,34 @@ company (something like "Always use Artifactory for your dependencies and
 artifacts"). But it's no secret what I am using - so you can try, too. Here's
 the default logic I am using:
 
-1.  Every security finding contains a [CWE](https://cwe.mitre.org/) reference.
+1.  Every security finding contains a [**CWE**](https://cwe.mitre.org/) reference.
 2.  CWE reference is mapped to Secure Coding Practices.
     -   Using CWE in Secure Coding Practices allows embedding Secure Coding Practices in vulnerability reports and dashboards.
 3.  Secure Coding Practices are created using (and practices refer to it):
     1.  Company's shared security solutions (and the corresponding architectural
         guidelines)
-    2.  [OWASP ASVS](https://github.com/OWASP/ASVS/) (also has CWE mapping)
-    3.  [The Twelve-Factor App](https://12factor.net/) (actually, as of recently
-        I am mostly using  
-        ["Beyond the 12 Factor App" by Kevin Hoffman](http://pivotal.io/beyond-the-twelve-factor-app))
-    4.  [OWASP OpenSAMM](https://owaspsamm.org/) and [NIST SSDF](https://csrc.nist.gov/projects/ssdf)
+    2.  [**OWASP ASVS**](https://github.com/OWASP/ASVS/) (also has CWE mapping)
+    3.  [**The Twelve-Factor App**](https://12factor.net/) (actually, as of recently
+        I am mostly using
+        ["**Beyond the 12 Factor App**" by Kevin Hoffman](http://pivotal.io/beyond-the-twelve-factor-app))
+    4.  [**OWASP OpenSAMM**](https://owaspsamm.org/) and [**NIST SSDF**](https://csrc.nist.gov/projects/ssdf)
         -   These two are usually already embedded with the company's Information Security Policy (and the derived standards), so the links typically lead directly to the policy portal.
 
 Below goes my personal public draft:
 
 ### Secure Coding Practices
 
-1.  **Never put secrets and other sensitive information in your code repository
-    or build artifacts. Not even if you encrypt it.**
-    -   No sensitive information belongs to your code or artifact. Instead, it
-        belongs to the environment configuration, which is dynamic, allowing
-        injecting secrets and other configuration parameters during deployments.
-        Most modern deployment tools support this approach out of the box. The
-        most common patterns are environment variables and file templates.
-
-2.  **Focus on creating value. Don't waste time reinventing the wheel. Use
+1.  **Focus on creating value. Don't waste time reinventing the wheel. Use
     managed services as much as possible**
     -   Use cloud and SaaS, and there are so many open source products that
-        provide the most needed tools and services for software projects. If your
+        provide the most needed tools and services for software projects. 
+    -   If your
         project is internal to the company, it (company) has probably already
         invested in the best products and teams of professionals to provide you
         with compliant, secure, and reliable managed services for everything you
         need.
 
-3.  **Employ automation whenever possible, to eliminate the potential human
+2.  **Employ automation whenever possible, to eliminate the potential human
     error**
     -   The software industry has proven that automation and tests are worthy
         investments that pay ten times over.
@@ -142,7 +135,7 @@ Below goes my personal public draft:
         -   Security scans
         -   Automatic dependency upgrades
 
-4.  **Verify all new dependencies before adding them to the project**
+3.  **Verify all new dependencies before adding them to the project**
     -   This includes everything - from libraries and tools to services.
     -   Red flags:
         -   Dependencies that are not well-known or popular and have few or no
@@ -154,53 +147,48 @@ Below goes my personal public draft:
         -   Dependencies that are new and didn't have at least 1-2 stable
             releases.
       
-5.  **RTFM!**
-    -   Once you did a good job ensuring that you only got the best, most
-        well-known, and time-tested dependencies for your project, they probably
-        already have all the necessary security controls embedded and even enabled
-        by default. Hence, all left is not to screw that up. Take time to read the
-        tool's manual.
+4.  **RTFM!**
+    -   Once you've done an excellent job ensuring that you only got the best,
+        most well-known, and time-tested dependencies for your project, they
+        probably already have all the necessary security controls embedded and
+        even enabled by default. Hence, all left is not to screw that up. Take
+        time to read the tool's manual.
     -   The vast majority of the vulnerabilities I helped fix in
         the last ten years were precisely that - the team was simply unaware of
         their framework's security features.
 
-6.  **Update and patch all project dependencies often**
+5.  **Update and patch all project dependencies often**
     -   Most dependencies and dependency managers follow and support
         the [Semantic Versioning](https://semver.org/) model, and if you are
         concerned about breaking changes, you can restrict to the latest patches
         and minor updates.
+    -   The stability of the software is no longer ensured by sticking to an old
+        component version - but by well-defined automated constant testing.
 
-7.  **Keep development dependencies separate from production ones, and ensure
+6.  **Keep development dependencies separate from production ones, and ensure
     that the development functionality does not get in production artifacts**
     -   Most dependency management and build tools allow for separate lists for
         development and test dependencies.
 
-8.  **Use an issue tracker**
+7.  **Use an issue tracker**
     -   Projects of any size need a way to plan, track and prioritize all the
         things that need to be done.
     -   Modern issue trackers are easy to embed in the software development
         process, including tracking commits, pull requests, and releases
         corresponding to specific issues.
 
-9.  **Ensure that your automatic builds don't leak secrets and any other
-    sensitive information**
-    -   This is one of the most common places to leak sensitive information. Per
-        most standards, leaked passwords are considered compromised and are
-        required to be changed. The "Internal Threat" scenario includes an
-        accidental use of those passwords as well.
-
-10. **Open access to your code repository**
+8.  **Open access to your code repository**
     -   The more people can look at your code, the more chances they spot an issue
         or contribute.
     -   There is practically no excuse not to open the code repository to at least
         all other dev teams in the company.
 
-11. **Ensure the project has documentation. At least a quickstart**
+9.  **Ensure the project has documentation. At least a quickstart**
     -   Provide at least enough information for a new person to join the project
         to get the build to work locally. This is a necessary first step for
         anyone to contribute to the project in any capacity.
 
-12. **Use [Trunk Based Development](https://trunkbaseddevelopment.com/) and
+10. **Use [Trunk Based Development](https://trunkbaseddevelopment.com/) and
     establish a code review process**
     -   A prevalent way is to use pull requests.
     -   But check
@@ -208,6 +196,21 @@ Below goes my personal public draft:
         like [pair programming](https://en.wikipedia.org/wiki/Pair_programming).
         Modern IDEs [already have](https://www.jetbrains.com/code-with-me/)
         support for that embedded.
+
+11. **Never put secrets and other sensitive information in your code repository
+    or build artifacts. Not even if you encrypt it.**
+    -   No sensitive information belongs to your code or artifact. Instead, it
+        belongs to the environment configuration, which is dynamic, allowing
+        injecting secrets and other configuration parameters during deployments.
+        Most modern deployment tools support this approach out of the box. The
+        most common patterns are environment variables and file templates.
+
+12. **Ensure that your automatic build console and logs don't leak secrets and
+    any other sensitive information**
+    -   This is one of the most common places to leak sensitive information. Per
+        most standards, leaked passwords are considered compromised and are
+        required to be changed. The "Internal Threat" scenario includes an
+        accidental use of those passwords as well.
 
 ## Next steps from here
 
