@@ -11,8 +11,8 @@ and that's what I base my following statement on:
 **Application security engineers are software engineers**. They bring value by
 taking on the complexity of security components in the application so that
 the other engineers can focus on what they do best: enabling the business and
-helping the client. That includes risk management and vulnerability prevention,
-and remediation.
+helping the client. That includes risk management and vulnerability prevention
+(remediation).
 
 ## What is a secure application?
 
