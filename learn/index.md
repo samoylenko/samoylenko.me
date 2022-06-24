@@ -160,6 +160,10 @@ Widely used in large companies, it's not going away anytime soon. It's free to
 use and a great programming language to learn. There is a big community and lots
 of helpful resources on the Internet.
 
+> **NOTE**: The author of this text uses [**Kotlin**](https://kotlinlang.org/)
+> as his primary programming language, but I recommend starting with Java if this
+> is your first programming language.
+
 Below are our recommendations on how to start with Java.
 
 #### Java - Theory
