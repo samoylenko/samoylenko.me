@@ -1,18 +1,20 @@
 # What is Application Security?
 
-Let's not waste your time: **Application Security is DevOps, DevOps is
-Application Security**. You get there by reducing complexity, embracing change
-and learning, and by shortening the feedback loop.
+Let's not waste your time: **Application Security
+is [Continuous Delivery](https://www.youtube.com/watch?v=ulRCs7xQA74),
+[Continuous Delivery](https://www.youtube.com/watch?v=ulRCs7xQA74) is
+Application Security**. You get there by shipping code rapidly,
+shortening the feedback loop, embracing change, experimenting and
+learning.
 
-Technically, I can no longer distinguish between security issues and other
-software bugs, both in design and code. Just priority and complexity, maybe -
-and that's what I base my following statement on:
+I can no longer distinguish between security
+issues and other software bugs, both in design and code. Just priority and
+complexity, maybe - and that's what I base my following statement on:
 
-**Application security engineers are software engineers**. They bring value by
-taking on the complexity of security components in the application so that
-the other engineers can focus on what they do best: enabling the business and
-helping the client. That includes risk management and vulnerability prevention
-(remediation).
+**Application security engineers are software engineers**. If you are a
+pentester, an "offensive security" professional that never shipped code, you are
+part of Quality Assurance. The "glorious" days of "hackers telling developers
+what to do" are long gone and proven wrong tenfold.
 
 ## What is a secure application?
 
@@ -62,7 +64,7 @@ The best one I know is
 There are over 200 items on that list, but just following the modern software
 development practices, avoiding the two abovementioned mistakes, and simply
 reading manuals for the tools and libraries or frameworks you are using covers
-most of them. 
+most of them.
 
 Some people call it "**Secure Coding Practices**." But it looks like there is no
 universal document I could refer you to, and each company (or team) defines its
