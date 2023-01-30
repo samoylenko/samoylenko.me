@@ -26,6 +26,14 @@ what to do" are long gone and proven wrong tenfold.
 (I apologize for not remembering, who and when said this, but this is the best
 definition I could find so far.)
 
+In most projects, that translates into:
+
+> A secure application is an application that passes all tests
+
+And I usually spend lots of my time automating (security) tests at all stages of the CI/CD pipeline. I am a big fan of
+[David Farley](https://www.davefarley.net/) and
+[Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development).
+
 ## What is an application security issue (vulnerability)?
 
 Security issues are unplanned, undesired, and unexpected application behavior.
@@ -66,14 +74,16 @@ development practices, avoiding the two abovementioned mistakes, and simply
 reading manuals for the tools and libraries or frameworks you are using covers
 most of them.
 
-Some people call it "**Secure Coding Practices**." But it looks like there is no
-universal document I could refer you to, and each company (or team) defines its
-own. Here's [my attempt to define something like that](practices).
+Some people call it "[**Secure Coding Practices**](practices)." But it looks
+like there is no universal document I could refer you to, and each company (or
+team) defines its own.
+Here's [my attempt to define something like that](practices).
 
 ## Still reading?
 
 Let's continue our discussion:
 
+*   [Define Application Security](define)
 *   [Preventing human mistakes in software development](prevent)
 *   [Learning Application Security](learn)
 *   [Secure Coding Practices](practices)
