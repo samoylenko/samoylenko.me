@@ -1,8 +1,8 @@
 # What is Application Security?
 
 Let's not waste your time: **Application Security
-is [Continuous Delivery](https://www.youtube.com/watch?v=ulRCs7xQA74),
-[Continuous Delivery](https://www.youtube.com/watch?v=ulRCs7xQA74) is
+is [Continuous Delivery](https://www.youtube.com/watch?v=eoaDr5PpT2c),
+[Continuous Delivery](https://www.youtube.com/watch?v=eoaDr5PpT2c) is
 Application Security**. You get there by shipping code rapidly,
 shortening the feedback loop, embracing change, experimenting and
 learning.
