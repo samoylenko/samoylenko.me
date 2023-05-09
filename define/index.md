@@ -9,7 +9,7 @@ me for the quality of this document.
     - The ultimate goal is to prevent existence of any (security) bugs in our software.
     - "Security" translation: Prevent external parties from finding and exploiting vulnerabilities in our software. We are not in the business of ["security through obscurity"](https://en.wikipedia.org/wiki/Security_through_obscurity), so we achieve this by detecting and preventing (security) bugs in our software delivery pipeline as early as we can.
 
-
+_(This is a living document. The below is about security bugs only, but it easily aligns with the standard quality assurance processes and tracking any other types of issues in the code)_
 
 - How do we achieve this goal? Let's take a look at what we know:
 
