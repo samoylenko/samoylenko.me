@@ -6,7 +6,9 @@ me for the quality of this document.
 ## Introduction
 
 - **Goal**:
-    - The ultimate goal is to prevent external parties from finding and exploiting vulnerabilities in our software.
+    - The ultimate goal is to prevent existence of any (security) bugs in our software.
+    - "Security" translation: Prevent external parties from finding and exploiting vulnerabilities in our software. We are not in the business of ["security through obscurity"](https://en.wikipedia.org/wiki/Security_through_obscurity), so we achieve this by detecting and preventing (security) bugs in our software delivery pipeline as early as we can.
+
 
 
 - How do we achieve this goal? Let's take a look at what we know:
