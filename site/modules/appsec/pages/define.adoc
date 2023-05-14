@@ -1,0 +1,177 @@
+= What Does it Even Mean, "Application Security?"
+
+This is a long-living draft, periodically updated after discussions with software and security engineers.
+Please forgive me for the quality of this document.
+
+== Introduction
+
+* The *Goal*:
+** The ultimate goal is to prevent existence of any (security) bugs in our software.
+** "Security" translation: Prevent external parties from finding and exploiting vulnerabilities in our software.
+We are not in the business of https://en.wikipedia.org/wiki/Security_through_obscurity["security through obscurity"], so we achieve this by detecting and preventing (security) bugs in our software delivery pipeline as early as we can.
+
+NOTE: This is a living document.
+The below is about security bugs only, but it easily aligns with the standard quality assurance processes and tracking any other types of issues in the code
+
+* How do we achieve this goal?
+Let's take a look at what we know:
+
+** Most successful hacks exploit really simple, easily discoverable by tools, well-known, and dumb vulnerabilities.
+
+** Most malicious external parties use the same tools as whitehat hackers (pentesters) do.
+Vast majority of these tools are easily available for free.
+The ones that are not are available for free are available for a cost, but still easily available.
+
+* What does this mean to us?
+
+** This means, that if we use these tools properly in our software delivery pipeline, it's a great path to start.
+Should cover us fairly well.
+
+** Of course, there's not much one can do against a sophisticated, dedicated and persistent attacker, but that's a topic for the defense-in-depth discussion.
+
+* What is our *success metric*?
+
+** The best metric to verify our progress on the effort: *number of vulnerabilities discovered by pentest (the less the better)*.
+
+** This pentest scope:
+
+*** Whitebox testing.
+**** Preferably, with integration of tests with security tools.
+E.g., BurpSuite and OWASP Zaproxy allow proxying tests through them, allowing to learn the webapp/api structure and capturing credentials to help the automatic security testing.
+
+**** Pentest against the application endpoint directly.
+No WAFs, etc., in between (that would be defense in depth and out of the scope of this article)
+
+== Methodology
+
+* The most reliable way to detect vulnerabilities is pentest.
+
+* Pentest is a human-driven effort.
+So it's highly dependent on the engineer performing the testing.
+So we want as many as possible and as diverse as possible pentesters involved in the pentest.
+So we rotate our pentesters or firms that perform the pentest for us.
+
+=== Human-driven Pentest/DAST
+
+|===
+|Measure |Value
+
+|Effectiveness
+|Max
+
+|Cost
+|Max
+
+|Time and effort
+|Max
+
+|Error rate
+|Max
+|===
+
+This is *quite very expensive**.
+So the first logical decision is to *capture the "low-hanging fruits"*:
+
+* Try to eliminate the most basic, easy to detect, findings.
+We don't want pentester to spend their time discovering and documenting the basic items that can easily be detected by security tools.
+We want their skill and time to be used as best as possible.
+So we employ various security tools and security scanners.
+See the introduction above.
+
+* So we apply the *https://en.wikipedia.org/wiki/Pareto_principle[Pareto principle]* and attempt to catch 80% issues with 20% effort and cost.
+We employ automation:
+
+=== Tool automation (Pentest/DAST)
+
+|===
+|Measure |Value
+
+|Effectiveness
+|Med
+
+|Cost
+|Med
+
+|Time and effort
+|Low
+
+|Error rate
+|Low
+|===
+
+This allows us significantly reduce the cost of the human pentest and improve the results from that pentest since we allow the human pentester to focus more on complex attacks such as exploitation of the application logic and combining the findings.
+
+=== "Shift Left"
+
+But both human-driven penetration testing and DAST tools are still very slow - they only work against a running instance of our code.
+I.e., the bug gets pretty far into the software delivery pipeline by the time we detect it.
+So it gets very expensive to fix it.
+
+So what can we do? *This is where we start looking at the code*, trying to find the vulnerabilities before they get promoted and deployed, hopefully even before the software engineer pushes the code in the repository.
+
+*So we start looking at the code*.
+It's not as precise as pentest, but allows us notice bugs early in the software delivery pipeline, and significantly reduces the cost of fixing them.
+
+*Rinse and repeat* (notice we are repeating the language from the beginning of the above section)
+
+* The most reliable way to detect vulnerabilities in code is peer code review.
+
+* Peer code review is a human-driven effort.
+So it's highly dependent on the engineer performing the review. [So we want as many as possible and as diverse as possible engineers involved in the review](../prevent).
+
+== Human Peer Code Review
+
+|===
+|Measure |Value
+
+|Effectiveness
+|Max
+
+|Cost
+|Max
+
+|Time and effort
+|Max
+
+|Error rate
+|Max
+|===
+
+* The first logical decision is to try to eliminate the most basic, easy to detect, findings.
+We don't want engineers to spend their time discovering and documenting the basic items that can easily be detected by security tools.
+We want their skill and time to be used as best as possible.
+So we employ various security tools and security scanners.
+
+* So we apply the *https://en.wikipedia.org/wiki/Pareto_principle[Pareto principle]* and attempt to catch 80% issues with 20% effort and cost.
+We employ automation:
+
+== Tool Automation (SAST, SCA, Quality, Lint)
+
+|===
+|Measure |Value
+
+|Effectiveness
+|Med
+
+|Cost
+|Med
+
+|Time and effort
+|Low
+
+|Error rate
+|Low
+|===
+
+== Ok, so we identified some bugs, now what?
+
+"There are two types of software bugs: the ones that are fixed immediately, and the ones that are never fixed" (https://www.davefarley.net[Dave Farley]?)
+
+We must accept that the developer is distracted by the feedback from the security tools - just like from any other quality tools.
+This should be the company decision, part of definition of done.
+
+https://www.youtube.com/watch?v=eoaDr5PpT2c[It's already been proven that there is no tradeoff between quality of software
+and speed of it's delivery.
+It's reverse - you need quality to go fast.]
+
+Everything that is not immediately fixed is a risk acceptance.

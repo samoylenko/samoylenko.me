@@ -1,0 +1,74 @@
+= Secure Coding Practices Example
+
+This page is an example that covers most common practices:
+
+. *Focus on creating value.
+Don't waste time reinventing the wheel.
+Use managed services as much as possible*.
+* Use cloud and SaaS, and there are so many open-source products that provide the most needed tools and services for software projects.
+* If your project is internal to the company, it (the company) has probably already invested in the best products and teams of professionals to provide you with compliant, secure, and reliable managed services for everything you need.
+
+. *Employ automation whenever possible to eliminate potential human error and overcome the fear of making changes to the code.*
+* The software industry has proven that automation and tests are worthy investments that pay ten times over.
+* Quick checklist:
+** Dependency management automation ("_don't download libraries manually_")
+** Automatic dependency upgrades
+*** https://semver.org/[Semantic Versioning]
+** Build automation
+** Code style, linters, and quality checks.
+** Test automation and coverage
+*** Security scans
+** Deployment automation
+
+. *Verify all new dependencies before adding them to the project.*
+* This includes everything - from libraries and tools to services and operating system packages.
+* Red flags:
+** Dependencies that are not well-known or popular and have few or no users.
+** Dependencies with a small number of maintainers (and not backed by companies).
+** Dependencies that are not updated by their maintainers and have abandoned open issues and pull requests
+** Dependencies that are new and didn't have at least 1-2 stable releases.
+
+. **RTFM!**
+* Once you've done an excellent job ensuring that you only got the best, most well-known, and time-tested dependencies for your project, they probably already have all the necessary security controls embedded and even enabled by default.
+Hence, all left is not to screw that up.
+Take time to read the tool's manual.
+* The vast majority of the vulnerabilities I helped fix in the last ten years were precisely that - the team was simply unaware of their framework's security features.
+
+. **Update and patch all project dependencies often.**
+* Most dependencies and dependency managers follow and support the [Semantic Versioning](https://semver.org/) model, and if you are concerned about breaking changes, you can restrict to the latest patches and minor updates.
+* The stability of the software is no longer ensured by sticking to an old component version - but by well-defined automated constant testing.
+
+. **Keep development dependencies separate from production ones, and ensure that the development functionality does not get into production artifacts.**
+* Most dependency management and build tools allow for separate lists for development and test dependencies.
+
+. **Use an issue tracker.**
+* Projects of any size need a way to plan, track and prioritize everything that needs to be done.
+* Modern issue trackers are easy to embed in the software development process, including tracking commits, pull requests, and releases corresponding to specific issues.
+
+. **Open access to your code.**
+* The more people can look at your code, the more chances they spot an issue or contribute.
+Also, https://en.wikipedia.org/wiki/Linus's_law[Linus's Law].
+* There is practically no excuse not to open the code repository to at least all other dev teams in the company.
+
+. **Ensure the project has documentation.
+At least a quickstart.**
+* Provide at least enough information for a new person to join the project to get the build to work locally.
+This is a necessary first step for anyone to contribute to the project in any capacity.
+. **Use https://trunkbaseddevelopment.com[Trunk Based Development] and establish a code review process.**
+* A prevalent way is to use pull requests.
+* But check out alternatives like https://en.wikipedia.org/wiki/Pair_programming[pair programming].
+Modern IDEs https://www.jetbrains.com/code-with-me/[already have] support for that embedded.
++
+video::ASOSEiJCyEM[youtube]
+
+. **Never put secrets and other sensitive information in your code repository or build artifacts.
+Not even if you encrypt it.**
+* No sensitive information belongs to your code or artifact.
+Instead, it belongs to the environment configuration, which is dynamic, allowing injecting secrets and other configuration parameters during deployments.
+Most modern deployment tools support this approach out of the box.
+The most common patterns are environment variables and file templates.
+
+. **Ensure that your automatic build console and logs don't leak secrets and any other sensitive information.**
+* This is one of the most common places to leak sensitive information.
+Per most standards, leaked passwords are considered compromised and are required to be changed.
+The "Internal Threat" scenario includes an accidental use of those passwords as well.

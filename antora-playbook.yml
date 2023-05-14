@@ -1,0 +1,21 @@
+site:
+  title: Michael Samoylenko - Personal Website
+  url: https://whatisappsec.info
+  start_page: site::index.adoc
+content:
+  sources:
+    - url: .
+      start_path: site
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true

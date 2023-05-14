@@ -1,0 +1,96 @@
+= What is Application Security?
+
+Let's not waste your time: *Application Security is Continuous Delivery*.
+You get there by shipping code rapidly, shortening the feedback loop, embracing change, experimenting, and learning.
+
+== Modern Application Security in 15 minutes
+
+The fastest way to share what I know about AppSec with you would be to recommend watching at least the first 15 minutes of this excellent speech by https://www.youtube.com/@ContinuousDelivery[Dave Farley].
+He explains everything there is to know about modern application security:
+
+video::eoaDr5PpT2c[youtube,align=center]
+
+https://www.davefarley.net/?p=352[Dave Farley also wrote a great new book] about faster production of better (and more secure) software.
+Currently, this is the *only modern book about Application Security* I can recommend:
+
+image::Modern-Software-Engineering.png[link="https://www.amazon.com/Modern-Software-Engineering-Better-Faster/dp/B0BLXCXT3R",width=35%,align=center]
+
+== My Personal View on Application Security
+
+Application Security is no longer a separate, standalone profession.
+I cannot distinguish between security issues and other software bugs in design and code.
+In my experience, fixing a non-working Application Security program is usually done by acknowledging that and joining the development team's software defect process (instead of inventing a separate process that requires extra resources)
+
+I think that *application security engineers are software engineers*.
+And that if you are a pentester, an "offensive security" professional that never shipped code - you are part of Quality Assurance.
+You are testing the code for defects just like everybody else.
+This is how you are adding value.
+
+== Definition of a "Secure Application"
+
+Most application security professionals I spoke with could not answer, "*What does it mean - secure application?*"
+
+Here's the best definition I could find so far:
+
+[quote,'Someone at the https://securityweekly.com[Security Weekly podcast]',I apologize for not being able to find the author of this definition]
+____
+A secure application is an application that only does what it was designed to do and nothing else.
+____
+
+== Definition of an Application Security Issue (Vulnerability)
+
+Do let me know if you disagree with this definition:
+
+[quote]
+____
+Security issues are unplanned, undesired, and unexpected application behavior.
+____
+
+See any difference with other software bugs?
+I don't.
+
+== Sources of Application Security Issues
+
+Application security issues, like any other software bugs, come from what is expected and natural to all humans - *exercising our right to make mistakes* and not always be perfect at everything.
+
+The most common mistakes that led to the creation of application security issues I witnessed were:
+
+. https://en.wikipedia.org/wiki/Reinventing_the_wheel[*Reinventing the wheel*] and the resulting unnecessary additional complexity - such as taking on work (and assuming the corresponding responsibility) that is out of the original project (or task) scope.
+
+. https://en.wikipedia.org/wiki/Confirmation_bias[*Making decisions in isolation*] - in the world of instant communication and the Internet, assuming that you are the first to face this problem and that no one else hasn't solved it.
+And in the rare scenario when there is no existing solution, thinking that you already have enough knowledge and resources to solve it without the help of others.
+
+== Preventing Application Security Issues
+
+It didn't take long to realize these two items above ("reinventing the wheel" and "making decisions in isolation") are parts of the same problem:
+
+[quote,'https://twitter.com/kylerandolph[Kyle Randolph]','https://www.heavybit.com/library/podcasts/the-secure-developer/ep-1-prioritizing-secure-development/[The Secure Developer podcast, ep. #1]']
+
+____
+If I’m doing something myself, I’m probably doing it wrong
+____
+
+After over a decade of watching successful development teams, talking to my friends and experts in the industry, and following the Lean -> DevOps -> Continuous Delivery movement, it all boils down for me to the https://en.wikipedia.org/wiki/Linus's_law[Linus' Law]:
+
+[quote,Eric S. Raymond,The Cathedral and the Bazaar (1999)]
+____
+Given enough eyeballs, all bugs are shallow
+____
+
+Fun fact: I wrote the first version of my "funny" article "xref:prevent.adoc[]" before I learned about the existence of Linus's Law :)
+
+== A Formal Checklist on Application Security
+
+If you are looking for a document/standard to use for requirements with your application security program, the best one I know is the https://github.com/OWASP/ASVS[*OWASP Application Security Verification Standard (ASVS)*].
+
+There are over 200 items on that list, but following modern software development practices, applying Linus’s Law, and simply reading manuals for the tools and libraries or frameworks you use cover most of them.
+
+Some people call this "*Secure Coding Practices*."
+
+== Secure Coding Practices
+
+There is no universal document I can refer you to.
+What you can find on the Internet is usually outdated.
+And on my experience, each company (or team) defines its own secure coding practices.
+
+This site contains my vision of Secure Coding Practices.

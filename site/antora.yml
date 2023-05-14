@@ -1,0 +1,7 @@
+name: site
+title: Personal Website
+version: ~
+start_page: appsec:index.adoc
+nav:
+  - modules/appsec/nav.adoc
+  - modules/scp/nav.adoc
