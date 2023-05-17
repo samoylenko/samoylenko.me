@@ -57,7 +57,7 @@ The most common mistakes that led to the creation of application security issues
 
 . https://en.wikipedia.org/wiki/Reinventing_the_wheel[*Reinventing the wheel*] and the resulting unnecessary additional complexity - such as taking on work (and assuming the corresponding responsibility) that is out of the original project (or task) scope.
 
-. https://en.wikipedia.org/wiki/Confirmation_bias[*Making decisions in isolation*] - in the world of instant communication and the Internet, assuming that you are the first to face this problem and that no one else hasn't solved it.
+. https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect[*Making decisions in isolation*] - in the world of instant communication and the Internet, assuming that you are the first to face this problem and that no one else hasn't solved it.
 And in the rare scenario when there is no existing solution, thinking that you already have enough knowledge and resources to solve it without the help of others.
 
 == Preventing Application Security Issues
