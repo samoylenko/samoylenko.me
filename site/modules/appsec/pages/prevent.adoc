@@ -1,6 +1,6 @@
 = Preventing Application Security Issues
 
-(if you are looking for less philosophy and didn't find this page helpful, please try "xref:prevent.adoc[]" instead)
+(if you are looking for less philosophy and didn't find this page helpful, please try "xref:scp:securecoding.adoc[]" instead)
 
 I am convinced that the best way to prevent mistakes during software development is to *never write code alone*.
 It's crucial always to have someone look at the changes and decisions you are making and try to hear them out if they are kind enough to provide you with their feedback, no matter how hard that is.
