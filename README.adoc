@@ -1,3 +1,3 @@
-= 'What is Application Security?' website
+= Personal Website
 
-A simple https://pages.github.com[GitHub Pages] project about Application Security, deployed at https://whatisappsec.info[whatisappsec.info]
+A simple https://pages.github.com[GitHub Pages] website using https://antora.org[Antora] and https://asciidoctor.org[Asciidoctor].
