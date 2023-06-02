@@ -5,8 +5,8 @@ For that, we'll use examples in different popular programming languages and fram
 
 == A basic reflected Cross-Site Scripting injection example:
 
-We will take the most basic example in multiple programming languages and frameworks from here:
-https://github.com/orgs/the-scan-project/repositories?q=vulnerable
+We will take the most basic example in a couple programming languages and frameworks from here:
+https://github.com/samoylenko?tab=repositories&q=vulnerable-app
 
 image::explain01.png[languages and frameworks]
 
