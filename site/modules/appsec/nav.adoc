@@ -4,3 +4,4 @@
 ** xref:learn.adoc[]
 ** xref:define.adoc[]
 ** xref:explain.adoc[]
+** xref:esapi-is-dead.adoc[]

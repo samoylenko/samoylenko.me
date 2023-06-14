@@ -1,0 +1,55 @@
+= OWASP ESAPI is Dead
+
+I'm sorry, but I think that https://owasp.org/www-project-enterprise-security-api/[OWASP ESAPI] is long dead.
+I was so surprised when in the 2020s, I saw active projects that still use the library.
+I think that https://owasp.org/www-project-enterprise-security-api/[ESAPI] is one of those relics, ghosts of the past, that are still around because the Internet is still full of recommendations to perform "Input Validation" using this library.
+And you know how the world of Enterprise Java goes.
+
+As far as I can tell, everything you can find on "Secure Coding" on the Internet today is based on the 2010 document called https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf["OWASP Secure Coding Practices Quick Reference Guide."]
+
+image::esapi-001.png[2010]
+
+There are some modern websites, but it's very easy to see that the contents are almost identical, including the broken links.
+
+This is the last OWASP document I know that is heavy on "Input Validation," and, e.g., Application Security Verification Project is https://github.com/OWASP/ASVS/blob/master/5.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v51-input-validation[much more cautious]:
+
+[quote,OWASP Application Security Verification Project,Section "V5.1 Input Validation",link=https://github.com/OWASP/ASVS/blob/master/5.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v51-input-validation]
+____
+Sometimes input validation is not going to be helpful for security, other times it will help it to a moderate degree, whilst other times it will be fundamental for security defense.
+It depends on the type of data and the use of that data to determine how effective input validation will be.
+Because input validation is not a complete security strategy, one should also make use of sandboxing, santisation, encoding and parameterisation.
+____
+
+Well, that's a very gentle way of putting it.
+I am yet to meet an engineer who successfully implemented a working "Input Validation" as the only fix to a vulnerability.
+
+And that's why most Static Analysers (https://en.wikipedia.org/wiki/Static_application_security_testing[SAST]) don't automatically close the vulnerabilities "remediated" by Input Validation.
+I surrounded the word "remediated" with quotes because, for me personally, this is an attempt of a mitigating control at best.
+
+Now, let's return to https://owasp.org/www-project-enterprise-security-api/[ESAPI] as the most recommended "Input Validation" method.
+
+The first thing we see in the 2020s is that this is still a "Lab Project" after over ten years of development:
+
+image::esapi-002.png[Lab Project,link=https://owasp.org/www-project-enterprise-security-api]
+
+The picture below is taken by clicking the ESAPI's home page link "https://mvnrepository.com/artifact/org.owasp.esapi/esapi[Download ESAPI jar – all versions]." It shows that the top use of the ESAPI library was in 45 projects in 2016, and after that, well, you can see it yourself:
+
+image::esapi-003.png[]
+
+I’ll be fair here and pull https://central.sonatype.com/artifact/org.owasp.esapi/esapi/2.5.2.0/versions[Maven Central’s usage snapshot for the library].
+But don’t get your hopes high with the higher numbers.
+It draws a very similar picture:
+
+image::esapi-004.png[]
+
+That’s how many people think it’s a great idea to use ESAPI today.
+There was a spike in usage many years ago, but over 90% dropped the next year - they probably learned something new about the problem they were trying to solve.
+
+TIP: If you see ESAPI used in your project today, it's probably over ten years old - and yes, there was a time when it was considered a good idea to do that, but that was a long time ago.
+
+== P.S.
+
+While I was writing this article, one of my friends, https://domi.zip/[Dominique], who is also an Application Security expert, pointed me towards the https://owasp.org/www-project-java-html-sanitizer/[OWASP Java HTML Sanitizer] project, which seems to be in a much better shape and is https://owasp.org/www-project-enterprise-security-api/#div-shouldiuseesapi[recommended, by OWASP, over ESAPI in most cases].
+So I am publishing this article while still trying to figure out the role of these projects in modern software development.
+
+In the last five years, at least, I was much more successful in refactoring the code affected by the issues these two libraries solve instead of applying them. Still, there are many cases when quickly adding an HTML sanitizer is an adequate solution for fixing a critical injection vulnerability in the outdated legacy code if there is no time or budget.
