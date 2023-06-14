@@ -93,4 +93,4 @@ There is no universal document I can refer you to.
 What you can find on the Internet is usually outdated.
 And on my experience, each company (or team) defines its own secure coding practices.
 
-This site contains my vision of Secure Coding Practices.
+This site contains xref:scp:securecoding.adoc[my vision of Secure Coding Practices].
