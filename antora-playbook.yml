@@ -1,6 +1,6 @@
 site:
   title: Michael Samoylenko - Personal Website
-  url: https://whatisappsec.info
+  url: https://samoylenko.me
   start_page: site::index.adoc
 content:
   sources:
