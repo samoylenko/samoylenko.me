@@ -46,7 +46,7 @@ Indeed, an excellent robot friend to have.
 There are many potential robot friends available out there to help with all sorts of tasks, from architecture and design to decision making, collaboration, automation, and all the way down to writing the code.
 
 If you are looking for my recommendation on robots to include in your project, the list is below.
-But if you are about to start the search on the Internet, I recommend looking for your project's programming language, platform, or even tool, prefixing them with the word "[awesome](https://awesomelists.top/)." For example, "Awesome Kotlin" or "Awesome Node." That's an excellent way to start or improve any project, even though I fully understand this is slightly off-topic from our conversation about robots.
+But if you are about to start the search on the Internet, I recommend looking for your project's programming language, platform, or even tool, prefixing them with the word "https://awesomelists.top/[awesome]." For example, "Awesome Kotlin" or "Awesome Node." That's an excellent way to start or improve any project, even though I fully understand this is slightly off-topic from our conversation about robots.
 
 Here's the list of my closest robot friends, who I always bring with me to any project:
 

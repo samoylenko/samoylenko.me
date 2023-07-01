@@ -117,7 +117,7 @@ It's not as precise as pentest, but allows us notice bugs early in the software 
 * The most reliable way to detect vulnerabilities in code is peer code review.
 
 * Peer code review is a human-driven effort.
-So it's highly dependent on the engineer performing the review. [So we want as many as possible and as diverse as possible engineers involved in the review](../prevent).
+So it's highly dependent on the engineer performing the review. xref:prevent.adoc[So we want as many as possible and as diverse as possible engineers involved in the review].
 
 == Human Peer Code Review
 
