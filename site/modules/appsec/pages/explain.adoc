@@ -1,20 +1,20 @@
-= Modern vulnerability resolution (XSS example): Validation vs. Encoding
+= Modern vulnerability resolution (Cross-Site Scripting). Validation vs. Encoding
 
-Let's take a look at the most basic Cross-Site Scripting example (XSS).
-For that, we'll use examples in different popular programming languages and frameworks.
+Let’s look at the most basic https://en.wikipedia.org/wiki/Cross-site_scripting[Cross-Site Scripting] example (XSS).
+We’ll use examples in a couple of different popular programming languages and frameworks for that.
 
 == A basic reflected Cross-Site Scripting injection example:
 
-We will take the most basic example in a couple programming languages and frameworks from here:
+We will take the most basic example in a couple of programming languages and frameworks from here:
 https://github.com/samoylenko?tab=repositories&q=vulnerable-app
 
-image::explain01.png[languages and frameworks]
+image::explain01.png[]
 
 We clone the repositories to run our experiment:
 
-image::explain02.png[languages and frameworks]
+image::explain02.png[]
 
-All these applcations have a `/hello` endpoint which will respond `Hello, $name` to a parameter in the URL.
+All these applications have a `/hello` endpoint that will respond `Hello, $name` to a parameter in the URL.
 For example,
 
 `http://localhost:8080/hello?name=Michael` will return `Hello, Michael`
@@ -38,12 +38,12 @@ The first example in NodeJS is obvious enough:
 
 [source,javascript]
 ----
-  app.get('/hello', function (req, res) {
-    res.send(`Hello, ${req.query.name}`)
+app.get('/hello', function (req, res) {
+  res.send(`Hello, ${req.query.name}`)
 })
 ----
 
-As expected, we get an XSS:
+As expected, we got an XSS:
 
 image::explain04.png[xss-node-express]
 
@@ -103,24 +103,25 @@ class HelloController {
 }
 ----
 
-Lets try it:
+Let's try it:
 
 image::explain06.png[xss-java-micronaut]
 
 Wait, what?
 No XSS!
 The injected code was escaped?
+Or validated?
 Was it?
 But how?
-It's litereally the same code as before!
+It's literally the same code as the previous example!
 
 === Let's finish our experiment before we investigate what is really going on
 
-NOTE: I plan to extend this article with deserialization vulnerabilities, as well - hence I have Kotlin in the picture as well.
-But that's later, here's the result we get when we try the injection with the apps we just downloaded.
+NOTE: I’ve also been planning to extend this article with deserialization vulnerabilities for a while - all out of my love for https://kotlinlang.org/[Kotlin].
+I never got back to it, but the table below also contains Kotlin apps.
 
 |===
-|Language |Framework |Did we get the XSS as expected?
+|Language |Framework |Did we get the XSS as expected with the same operation (add user input to output as is)?
 
 |NodeJS
 |Express
@@ -130,25 +131,21 @@ But that's later, here's the result we get when we try the injection with the ap
 |Spring
 |Yes
 
-
 |Java
 |Micronaut
-|*No*
-
+|*No!*
 
 |Kotlin
 |Spring
 |Yes
 
-
 |Kotlin
 |Micronaut
-|*No*
-
+|*No!*
 
 |Kotlin
 |Ktor
-|*No*
+|*No!*
 
 |===
 
@@ -156,80 +153,119 @@ But that's later, here's the result we get when we try the injection with the ap
 
 So what is going on?
 Does the string get encoded in HTML?
-Is it escaped? is there an input validation?
+Is it escaped?
+Is there an input validation?
 
-Let's take a look at the HTTP protocol level information:
+Let's take a look at the HTTP protocol-level information.
+In each of the following three request pairs:
 
-image::explain07.png[investigation]
-
-The picture contains three columns and two rows: two requests for each language+framework example:
-
-* The first request emulates a browser and instructs the server the type of content it accepts (HTML)
+* The first request emulates a browser and instructs the server on the type of content it accepts (HTML)
 * The second request is a plain `GET` request (no headers) - to see how that affects the server setting the `Content-Type` server in the response.
 
-== What do we see?
+=== NodeJS + Express (default request headers)
 
-We see the following:
+.The browser is instructed to render the output as HTML. We also see that the output is identical in all examples and is never changed.
+image::explain07-01-express.png[]
 
-. The output (the`Hello, <script>alert('xss')</script>` string) is identical in all cases.
-And even though nothing being sanitized or validated, it doesn't execute when we are using the Micronaut framework.
+=== NodeJS + Express (no extra headers)
 
-. It appears, that the only difference between having XSS or not is the `Content-Type` header that instructs the browser how to treat the server output.
+.If the browser doesn't provide a preferred content type, Express defaults to HTML.
+image::explain07-02-express.png[]
 
-. The Cross-Site Scripting vulnerability was prevented by the framework not honoring the browser's `Accept:` header and setting the `Content-Type` header according to its internal logic
+=== Java + Spring (default request headers)
 
-== What is the right fix for this vulnerability?
+image::explain07-03-spring.png[]
 
-Based on what we just learned, validating input and escaping the output manually in the code is no longer required.
-All this functionality already exists in the modern popular frameworks and libraries and just needs to be used properly.
+=== Java + Spring (no extra headers)
 
-*The NodeJS + Express application fix:*
+.Spring defaults to plain text, so the injected code wouldn't be executed if the browser didn't provide an accepted content type.
+image::explain07-04-spring.png[]
 
-image::explain08.png[]
+=== Java + Micronaut (default request headers)
 
-*The Java + Spring application fix:*
+.Micronaut always defaults to JSON for raw outputs.
+image::explain07-05-micronaut.png[]
 
-image::explain09.png[]
+=== Java + Micronaut (no extra headers)
 
-For many people reading here, this probably only starts the discussion: "why do set plaintext here?".
-Well, the reason is - in the modern world of web applications, we need to look at what exactly we are trying to do here - returning this output at this endpoint:
+image::explain07-06-micronaut.png[]
 
-. If we'd intended to return a rich HTML output for our user, we wouldn't be constructing the output manually in code.
-We'd use templates and front-end frameworks for that.
-This is the recommendation that comes back from the Application Security team, together with the quick fix using plaintext when we help fixing this vulnerability.
-. If we'd intended to return data in a REST API endpoint, we'd use JSON (or gRPC).
-. So looking at this existing code, it just wants to show a simple string at the screen, so we end up recommending making it plaintext to eliminate the vulnerability as soon as possible using as little resources and time as we can.
+== So what do we get?
 
-Actually, OWASP ASVS is backing this decision up in the https://github.com/OWASP/ASVS/blob/master/5.0/en/0x13-V5-Validation-Sanitization-Encoding.md[`V5 Validation, Sanitization and Encoding`] section.
-Output encoding is the one recommended in most cases like this.
+We got the following:
+
+. The output (the `Hello, <script>alert('xss')</script>` string) is identical in all cases.
+And even though nothing is being sanitized or validated, it doesn't execute when using the Micronaut framework.
+
+. The only difference between having XSS and not is the `Content-Type` header instructing the browser on treating the server output.
+
+. The Cross-Site Scripting vulnerability was prevented by the framework not trying to satisfy the browser's `Accept` header and setting the `Content-Type` header explicitly depending on the content it produced.
+
+== What is the proper fix for this vulnerability?
+
+Well, that depends on how you define the security of your application.
+Many people will say that just the fact that the output is encoded correctly (plaintext or JSON, not HTML, that would execute the script) is  https://github.com/OWASP/ASVS/blob/master/5.0/en/0x13-V5-Validation-Sanitization-Encoding.md[described as a proper solution in the Application Security Verfication Standard (ASVS)].
+
+But most still view it as just the fact that the code doesn’t execute is insufficient and malicious input must be prevented.
+It may not come as HTML today, but a future change in code or browsers may someday make it executable for any reason.
+It’s not secure to rely just on the header and hope that behavior never changes.
+
+=== What do static analysis tools (SAST) say?
+
+Most static security scanners (https://en.wikipedia.org/wiki/Static_application_security_testing[SAST]) indeed don’t check the `Content-Type` header and would always highlight it as a finding.
+But since most of them are now suggesting a fix through AI, they sometimes offer a solution doing precisely that - explicitly setting the `Content-Type` header to something other than `text/html`.
+
+I rely on my favorite scanner, https://snyk.io/[Snyk], which knows the scenario described here well.
+
+==== Snyk suggesting the fix
+
+image::explain07-snyk-01.png[]
+
+==== Snyk accepting the `Content-Type` header as a solution
+
+image::explain07-snyk-02.png[]
+
+==== Snyk - same with a Java Spring application
+
+image::explain07-snyk-03.png[]
+
+Just to be thorough, I've checked - and setting `Content-Type` to `text/html` does bring it back:
+
+image::explain07-snyk-04.png[]
+
+=== Conclusion
+
+Based on what we just learned, I will try to carefully make the following statements:
+
+. In the modern web, the server and browser work together to protect the user.
+
+. There may be much better ways to fix injection-type vulnerabilities than implement a custom, often regex-based filtering or escaping functions in code.
+Even https://github.com/OWASP/ASVS[OWASP Application Security Verification Project] (ASVS, probably the best source of information on preventing application security issues) supports that:
+
+[quote,Application Security Verification Standard,"V5 Validation,Sanitization and Encoding"]
+With modern web application architecture, output encoding is more important than ever.
+It is difficult to provide robust input validation in certain scenarios, so the use of safer API such as parameterized queries, auto-escaping templating frameworks, or carefully chosen output encoding is critical to the security of the application.
+
+. Most modern frameworks and libraries already contain most, if not all, the required functionality to do that already, so there’s often no need to write any extra code or make the code more complex trying to fix security issues.
+All it usually takes is to read the framework/library documentation carefully.
+* Constructing a raw HTML output in code no longer makes sense - templates and front-end frameworks exist for that.
+* Using a modern framework or a well-known library alone in the first place makes it hard to create a new vulnerability.
+
+. Regardless if you see the `Content-Type` header fix discussed in this article as a final fix for the vulnerability, or just a way to address the risk quickly, the fact that the user input makes it into the output as-is and may be executed under certain circumstances, should at least be considered a code smell and have a plan to fix it.
+
+=== Post Scriptum
+
+It’s probably also worth discussing why exactly I replace the `text/html` value in the `Content-Type` header with `text/plain`.
+That’s an excellent topic for writing a separate article, but here are a couple of bullet points.
+It all depends on how the endpoint is intended to be used.
+
+* If we intended to return a rich HTML output for our user, we wouldn’t construct the output manually in the code.
+We’d use templates and front-end frameworks for that.
+This is usually the recommendation from the Application Security team in the Cross-Site Scripting scenario discussed here.
+Together with the quick fix using plaintext as we discussed.
+
+* If we intended to return data in a REST API endpoint, we'd use JSON (or gRPC).
+
+* Looking at this existing code, it just wants to show a simple string on the screen. We recommend making it plaintext to eliminate the vulnerability as soon as possible using as little resources and time as possible.
+
 The last time I saw an OWASP document recommending input validation instead was an "OWASP Secure Coding Practices Quick Reference Guide" that was not updated since 2010.
-
-=== But what with the Java + Micronaut app?
-
-Any SAST tools that we use will still detect the string concatenation with a user-controlled parameter in the application.
-And yes, this is definitely not a false-positive:
-
-[source,java]
-----
-
-@Controller("/hello")
-class HelloController {
-    @Get
-    String getName(@QueryValue String name) {
-        return "Hello, " + name;
-    }
-}
-----
-
-This is still an XSS waiting to happen when someone changes behavior of this endpoint.
-But we just learned why many modern SAST solutions decrease the priority of this finding, and that the AppSec recommendation here is not implement a RegEx validation in front of this endpoint, but to ensure that the endpoint is designed according to what it is intended to do: if it's an HTML page, there should be a template framework in use.
-And if it's a REST API, the content type should be set accordingly to ensure there is no scenario for the injection.
-
-== What we learned
-
-We learned a number of important items critical to know for every Application Security Engineer:
-
-. In the modern web, server and browser are working in tandem to protect the user.
-. Constructing a raw HTML output in code no longer makes any sense - there are templates for that.
-Micronaut (and other newer frameworks, like, e.g. Ktor) all default to JSON or plain text when the endpoint returns an output constructed in code (e.g. via string concatenation) 3) Using a modern framework alone in the first place makes it hard to create a new vulnerability.
-. Most popular modern frameworks already contain all the necessary security controls, and there is no need to create those from scratch.
