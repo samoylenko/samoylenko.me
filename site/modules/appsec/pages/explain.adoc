@@ -241,7 +241,6 @@ Based on what we just learned, I will try to carefully make the following statem
 
 . There may be much better ways to fix injection-type vulnerabilities than implement a custom, often regex-based filtering or escaping functions in code.
 Even https://github.com/OWASP/ASVS[OWASP Application Security Verification Project] (ASVS, probably the best source of information on preventing application security issues) supports that:
-
 [quote,Application Security Verification Standard,"V5 Validation,Sanitization and Encoding"]
 With modern web application architecture, output encoding is more important than ever.
 It is difficult to provide robust input validation in certain scenarios, so the use of safer API such as parameterized queries, auto-escaping templating frameworks, or carefully chosen output encoding is critical to the security of the application.
