@@ -1,10 +1,21 @@
 = Preventing Application Security Issues
 
-(if you are looking for less philosophy and didn't find this page helpful, please try "xref:scp:securecoding.adoc[]" instead)
+[TIP]
+====
+If you are looking for less philosophy and didn't find this page helpful, please try "xref:scp:securecoding.adoc[]" instead.
 
-I am convinced that the best way to prevent mistakes during software development is to *never write code alone*.
+I wrote this article long ago, since carrying it through different blog and personal website formats.
+It was a great feeling when someone pointed me to the fact that I was describing https://en.wikipedia.org/wiki/Linus's_law[Linus’s Law] in action without knowing about it.
+====
+
+*I am convinced that the best way to prevent mistakes during software development is to never write code alone*.
+
 It's crucial always to have someone look at the changes and decisions you are making and try to hear them out if they are kind enough to provide you with their feedback, no matter how hard that is.
 Only humans are capable of writing good code and building sound designs - otherwise, we all would be out of our jobs by now, replaced by robots in all the greedy corporations that want to save every dime.
+
+.Linus's law:
+[quote,Eric S. Raymond,The Cathedral and the Bazaar (1999)]
+Given enough eyeballs, all bugs are shallow.
 
 == Bring friends to write code with you - as many as possible!
 

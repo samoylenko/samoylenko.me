@@ -35,7 +35,7 @@ Take time to read the tool's manual.
 * The vast majority of the vulnerabilities I helped fix in the last ten years were precisely that - the team was simply unaware of their framework's security features.
 
 . **Update and patch all project dependencies often.**
-* Most dependencies and dependency managers follow and support the [Semantic Versioning](https://semver.org/) model, and if you are concerned about breaking changes, you can restrict to the latest patches and minor updates.
+* Most dependencies and dependency managers follow and support the https://semver.org/[Semantic Versioning] model, and if you are concerned about breaking changes, you can restrict to the latest patches and minor updates.
 * The stability of the software is no longer ensured by sticking to an old component version - but by well-defined automated constant testing.
 
 . **Keep development dependencies separate from production ones, and ensure that the development functionality does not get into production artifacts.**

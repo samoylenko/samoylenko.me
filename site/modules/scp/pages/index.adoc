@@ -49,7 +49,7 @@ There is nothing more important for the software delivery, for it's quality and 
 
 === Following the Modern Security and Development Practices
 
-As of today, the best checklist on security controls that must be present in software I could find is https://github.com/OWASP/ASVS)[*OWASP ASVS*].
+As of today, the best checklist on security controls that must be present in software I could find is https://github.com/OWASP/ASVS[*OWASP ASVS*].
 The trick is - it's over 200 items that require an earnest effort to know and follow it.
 But the good news is - simply following the modern development methodologies and using well-known solutions takes care of most of the security controls in most software projects.
 

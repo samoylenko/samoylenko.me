@@ -86,7 +86,7 @@ JuiceShop is a good example of a modern https://en.wikipedia.org/wiki/Single-pag
 These tools will help you see all communication aspects of web applications, learn how they interact, and how parameters are being passed.
 This will be extremely useful to discover security issues or to verify implemented fixes.
 
-. https://github.com/zaproxy/zaproxy)[OWASP ZAP (Zed Attack Proxy)] - an OpenSource tool, a good place to start
+. https://github.com/zaproxy/zaproxy[OWASP ZAP (Zed Attack Proxy)] - an OpenSource tool, a good place to start
 +
 or
 
@@ -141,7 +141,7 @@ The knowledge and skills obtained while learning Spring will make you stand out 
 
 ===== Spring quickstart
 
-. Book: "https://www.manning.com/books/spring-in-action-fourth-edition)[Spring in action]" is great for getting started with Spring.
+. Book: "https://www.manning.com/books/spring-in-action-fourth-edition[Spring in action]" is great for getting started with Spring.
 
 . This is a good opportunity for us to stress that *reading reference manuals will help make you a better security professional*, so we recommend that you read Spring reference documentation in addition to the book.
 It looks huge, but its authors structured it the way that you only need to read what's necessary, and you can index the rest to know where to come back to looking for information on specific items.
