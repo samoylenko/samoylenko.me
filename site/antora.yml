@@ -5,3 +5,4 @@ start_page: appsec:index.adoc
 nav:
   - modules/appsec/nav.adoc
   - modules/scp/nav.adoc
+  - modules/articles/nav.adoc

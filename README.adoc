@@ -1,3 +1,20 @@
 = Personal Website
 
 A simple https://pages.github.com[GitHub Pages] website using https://antora.org[Antora] and https://asciidoctor.org[Asciidoctor].
+
+== Local Development
+
+(see xref:.github/workflows/publish.yml[])
+
+[source,shell]
+----
+npm install
+npx antora --fetch antora-playbook.yml
+----
+
+Or simply:
+
+[source,shell]
+----
+npm run build
+----

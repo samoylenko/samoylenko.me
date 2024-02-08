@@ -1,4 +1,4 @@
-= What Does it Even Mean, "Application Security?"
+= What does it even mean, "Application Security?"
 
 [NOTE]
 ====
@@ -23,7 +23,7 @@ Let's take a look at what we know:
 
 ** Most malicious external parties use the same tools as whitehat hackers (pentesters) do.
 Vast majority of these tools are easily available for free.
-The ones that are not are available for free are available for a cost, but still easily available.
+The ones not available for free are available for a cost but still readily available.
 
 * What does this mean to us?
 
