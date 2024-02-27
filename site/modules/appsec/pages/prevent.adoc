@@ -47,7 +47,7 @@ And since this conversation is also about bringing as many friends on board as p
 
 === Robot friends (Tools and automation)
 
-Everybody wanted to have a robot friend when we were kids (until we learned they want tp replace us at our job, right).
+Everybody wanted to have a robot friend when we were kids (until we learned they want to replace us at our job, right).
 And in software development, we can make that dream come true.
 
 If somebody asked me for the sole advice I'd give to software engineers, that advice would always be to *use https://www.sonarlint.org[SonarLint]*.
@@ -69,7 +69,7 @@ It replaced Veracode for me, believe it or not.
 Too good to pass it by as a
 https://en.wikipedia.org/wiki/Static_application_security_testing[static analysis] tool.
 * https://snyk.io[Snyk] - my top choice for code and dependency security checking.
-* https://owasp.org/www-project-dependency-check/[OWASP Dependency Check] - mostly in new projects
+* https://owasp.org/www-project-dependency-check/[OWASP Dependency Check] - mostly in new projects that can't afford Snyk yet.
 * https://www.zaproxy.org[Zaproxy] and https://sqlmap.org[sqlmap] - my defaults before the company provides another means for
 https://en.wikipedia.org/wiki/Dynamic_application_security_testing[security checks against a running instance].
 
