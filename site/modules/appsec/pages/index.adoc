@@ -28,7 +28,7 @@ This is how you are adding value.
 
 == Definition of a "Secure Application"
 
-Most application security professionals I spoke with could not answer, "*What does it mean - secure application?*"
+Most application security professionals I've spoken with could not answer the following question: *What does it mean for an application to be secure?*
 
 Here's the best definition I could find so far:
 
