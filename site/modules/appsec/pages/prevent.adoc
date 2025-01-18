@@ -69,6 +69,7 @@ It replaced Veracode for me, believe it or not.
 Too good to pass it by as a
 https://en.wikipedia.org/wiki/Static_application_security_testing[static analysis] tool.
 * https://snyk.io[Snyk] - my top choice for code and dependency security checking.
+* https://github.com/anchore/grype[Grype] - probably, the best free scanner available today.
 * https://owasp.org/www-project-dependency-check/[OWASP Dependency Check] - mostly in new projects that can't afford Snyk yet.
 * https://www.zaproxy.org[Zaproxy] and https://sqlmap.org[sqlmap] - my defaults before the company provides another means for
 https://en.wikipedia.org/wiki/Dynamic_application_security_testing[security checks against a running instance].
