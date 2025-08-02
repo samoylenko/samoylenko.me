@@ -1,5 +1,10 @@
 = What is Application Security?
 
+[WARNING, caption=Outdated content]
+====
+This page was created before the industry introduced the Product Security specialisation
+====
+
 Let's not waste your time: *Application Security is Continuous Delivery*.
 You get there by shipping code rapidly, shortening the feedback loop, embracing change, experimenting, and learning.
 
@@ -10,8 +15,8 @@ He explains everything there is to know about modern application security:
 
 video::eoaDr5PpT2c[youtube,align=center]
 
-https://www.davefarley.net/?p=352[Dave Farley also wrote a great new book] about faster production of better (and more secure) software.
-Currently, this is the *only modern book about Application Security* I can recommend:
+https://www.davefarley.net/?p=352[Dave Farley also wrote a great book titled "Modern Software Engineering"] about faster production of better (and more secure) software.
+This is probably *the best modern book about Application Security*, and I strongly recommend it before anything else:
 
 image::Modern-Software-Engineering.png[link="https://www.amazon.com/Modern-Software-Engineering-Better-Faster/dp/B0BLXCXT3R",width=35%,align=center]
 
