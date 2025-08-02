@@ -1,0 +1,19 @@
+= Michael Samoylenko
+
+Thank you for taking the time to check my website.
+As you've probably already expected, it's vastly out of date.
+Like most people, when I am in front of my monitor, I prioritize solving my employer's problems.
+And it's been some time since I was between jobs (probably jinxed it just now).
+
+If you are looking to learn more about me as a professional, the best place to start would be the navigation pane on the left.
+Although a bit outdated, the purpose of those articles is to demonstrate my thought process, allowing you to quickly filter me out if you don't share my approach to problem-solving:
+
+If you are assessing me, my recommendations in order of preference:
+
+. xref:appsec:prevent.adoc[]
+. xref:appsec:index.adoc[]
+. xref:appsec:define.adoc[]
+
+If you are looking for my GitHub page:
+
+* https://github.com/samoylenko

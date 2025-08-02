@@ -1,0 +1,2 @@
+* Michael's personal page
+** xref:index.adoc[]
