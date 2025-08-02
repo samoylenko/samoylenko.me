@@ -1,5 +1,10 @@
 = Preventing Application Security Issues
 
+[WARNING, caption=Outdated content]
+====
+This page was created before the industry introduced the Product Security specialisation.
+====
+
 [TIP]
 ====
 If you are looking for less philosophy and didn't find this page helpful, please try "xref:scp:securecoding.adoc[]" instead.

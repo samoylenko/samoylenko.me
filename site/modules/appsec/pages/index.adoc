@@ -2,7 +2,7 @@
 
 [WARNING, caption=Outdated content]
 ====
-This page was created before the industry introduced the Product Security specialisation
+This page was created before the industry introduced the Product Security specialisation.
 ====
 
 Let's not waste your time: *Application Security is Continuous Delivery*.
